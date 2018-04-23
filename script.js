@@ -1,120 +1,79 @@
 function task1(){
-	var num = 3;
-	alert(num);
+	var arr = ['a','b','c'];
+	alert(arr);
 }
 
 function task2(){
-	var a = 10, b=2;
-	summ = a+b;
-	raz = a-b;
-	proiz = a*b;
-	chast= a/b;
-
-	alert(a+"+"+b+"="+summ);
-	alert(a+"-"+b+"="+raz);
-	alert(a+"*"+b+"="+proiz);
-	alert(a+"/"+b+"="+chast);
+	var arr = ['a','b','c'];
+	alert(arr[0]);
+	alert(arr[1]);
+	alert(arr[2]);
 }
 
 function task3(){
-	var c = 15;
-	var d = 2;
-	var result = c + d;
-	alert(result);
+	var arr = ['a', 'b', 'c', 'd','e','f'] ;
+	alert(arr[0]+arr[1]);
+	alert(arr[2]+arr[3]);
+	alert(arr[4]+arr[5]);
+	alert(arr[0]+'+'+arr[1]+','+arr[2]+'+'+arr[3]+','+arr[4]+'+'+arr[5]);
+	
 }
 
 function task4(){
-	var a = 10;
-	var d = 2;
-	var c = 5;
-	alert(a + b + c);
+	var arr = [2,5, 3, 9] ;
+	alert(arr[0]*arr[1]+', '+arr[2]*arr[3]);
 }
 
 function task5(){
-	var a = 17;
-	var b = 10;
-	var c = a - b;
-	var d = 7;
-	var result = c + d;
-	alert(result);
+	var obj = {a: 1, b: 2, c: 3};
+	alert(obj['c']);
+	alert(obj.a);
 }
 
 function task6(){
-	var str = 'Привет, Мир!';
-	alert(str);
+	var obj = {Коля: '1000', Вася: '500', Петя: '1200000200'};
+	alert("Зарплата Коли:"+obj['Коля']);
+	alert("Зарплата Пети:"+obj.Петя);
 }
 
 function task7(){
-	var str1 = 'Привет, ';
-	var str2 = 'Мир!';
-	alert(str1 + str2);
+	var week={1:'Понедельник',2:'Вторник',3:'Среда',4:'Четверг',5:'Пятница',6:'Суббота',7:'Воскресенье'};
+	var num = prompt('Номер недели: ');
+	alert(week[num]);
 }
 
 function task8(){
-	var name = 'Евгений';
-	alert('Привет, ' + name);
+	var obj = {1:'пн', 2:'вт', 3:'ср', 4:'чт', 5:'пт', 6:'сб', 7:'вс'};
+	var day = 3;
+	alert(obj[day]);
 }
 
 function task9(){
-	var age = 19;
-	alert("мне"+age+"лет");
+	var arr = [ [1, 2, 3], [4, 5, 6], [7,8,9] ];
+	alert(arr[1][0]);
 }
 
 function task10(){
-	var youname = prompt("Ваше имя?");
-	alert("Очень приятно,"+youname);
+	var obj= {js:['jQuery', 'Angular'], php: 'hello', css: 'world'};
+	alert(obj.js[0]);
 }
 
 function task11(){
-	var number= prompt("Введите число:");
-	alert("квадрат вашего числа: "+number**2);
+	var arr = {
+	'ru':['пн', 'вт', 'ср', 'чт', 'пт', 'сб', 'вс'],
+	'en':['mn', 'ts', 'wd', 'th', 'fr', 'st', 'sn'],
+};
+	alert(arr['ru'][0]);
+	alert(arr['en'][2]);
 }
 
 function task12(){
-	var str ="abcde";
-	a=str[0];
-	c=str[2];
-	e=str[4];
-	alert(a);
-	alert(c);
-	alert(e);
+	var arr = {
+	'ru':['пн', 'вт', 'ср', 'чт', 'пт', 'сб', 'вс'],
+	'en':['mn', 'ts', 'wd', 'th', 'fr', 'st', 'sn'],
+};
+	var lang = 'ru';
+	var day = 3;
+	alert(arr[lang][day]);
 }
 
-function task13(){
-	var num = "1234567";
-	alert(num[0]*num[1]*num[2]*num[3]*num[4]*num[5]*num[6])
-}
-
-function task14(){
-	var hour = 60*60, day = 60*60*24, year = 60*60*24*365;
-	alert(hour);
-	alert(day);
-	alert(year);
-}
-
-function task15(){
-	var hour=10, min =02,sec = 35;
-	alert(hour +":"+min+":"+sec);
-}
-
-function task16(){
-	var num = 13;
-	alert(num **2);
-}
-
-function task17(){
-	var num = 17;
-	num = num + 27;
-	num = num - 22;
-	num = num * 210;
-	num = num / 15;
-	alert(num);
-}
-
-function task18(){
-	var num = 28;
-	num = num + 3;
-	num = num + 2;
-	num = num - 22;
-	alert(num);
-}
