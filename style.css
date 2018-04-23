@@ -1,11 +1,12 @@
 body{
-	text-align: center;
 	font-family: Arial, Verdana,  sans-serif; /* Семейство шрифтов */
   font-size: 11pt; /* Размер основного шрифта в пунктах  */
   background-color: #f0f0f0; /* Цвет фона веб-страницы */
   color: #333; /* Цвет основного текста */ 
+  font-family: 'Lora', serif;
 }
 h1 {
+  text-align: center;
   color: #a52a2a; /* Цвет заголовка */
   font-size: 24pt; /* Размер шрифта в пунктах */
   font-family: Georgia, Times, serif; /* Семейство шрифтов */
@@ -16,4 +17,34 @@ input{
 	height: 50px; /* Высота блока */
     width: 150px; /* Ширина блока */
     margin-bottom: 10px;
+}
+.basis{
+  border: 2px solid #fff;
+  width: 100%;
+ 
+}
+.task{
+  font-size: 20px;
+  margin:50px auto;
+  border: 2px dotted #000;
+  width: 600px;
+  height: 300px;
+  padding: 20px;
+  color:#240a41;
+  background: #20b99b;
+
+}
+.otstyp{
+  padding:10pt;
+}
+
+.task25>input{
+  width: 500px;
+  font-size: 30px;
+}
+.task25>button{
+  width: 200px;
+}
+.value_numk{
+  width: 500px;
 }
