@@ -6,51 +6,63 @@
 	<link rel="stylesheet" href="style.css">
 	<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
 </head>
-<body>
-	<h1>Урок 21."Задачи на даты в JavaScript"</h1>
+<body onload="task5(),task8()">
+	<h1>Урок 22."Задачи на работу с таймерами в JavaScript"</h1>
 	<div class="basis">
 		<div class="task task1">
 			<span>task1</span><br>
-			<button onclick="task1()">Нажми, чтобы узнать сегодняшнее число!</button>
+			<button onclick="task1()">Нажми, чтобы начать отчёт!</button><br><span>учтите, с каждым нажатием скорость увеличивается в 2 раза</span>
+			<span id="task1">    1</span>
 
 		</div>
 		<div class="task task2">
 			<span>task2</span><br>
-			<button onclick="task2()">Нажми, чтобы узнать текущий месяц</button>
+			<span id="task2">    1</span>
+			<button onclick="task2_1()" id="task2_1">Нажми, чтобы начать отчёт!</button><br>
+			<button onclick="task2_3()" id="task2_3">Нажми, чтобы остановить!</button><br>
 		</div>
 		<div class="task task3">
-			<span>task3</span><br>
-			<button onclick="task3()">Нажми, чтобы узнать текущий год</button>
+			<span>task3</span><br><br><br>
+			<span id="task3" ">00:00:00</span><br><br><br>
+			<button onclick="task3_1()">Нажмите чтобы узнать время</button>
 		</div>
 		<div class="task task4">
-			<span>task4</span><br>
-			<button onclick="task4()">Нажми,чтобы вывести дату в формате 12:59:59 31.12.2014 </button>
+			<span>task4</span><br><br><br>
+			<span id="task4">10</span><br><br><br>
+			<button onclick="task4()">Нажмите чтобы запустить таймер</button>
 		</div>
 		<div class="task task5">
-			<span>task5</span><br>
-			<button onclick="task5()">Вывод номера дня недели(отчёт начинается с 0-воскресенья)</button>		
+			<span>task5</span><br><br><br>
+			<div class="task51 task5-1" id="task5"></div>	
 		</div>
 		<div class="task task6"><span class="otstyp">task6</span><br>
-			<button onclick="task6()">День недели</button>
+			<div class="task5-1" id="task5"></div>	
+			<div class="task5-1" id="task5"></div>	
+			<div class="task5-1" id="task5"></div>	
 		</div>
 		<div class="task task7"><span class="otstyp">task7</span><br>
-			<input type="text" placeholder="Число">
-			<input type="text" placeholder="Месяц">
-			<input type="text" placeholder="Год"><br>
-			<input type="text" placeholder="День недели этого числа" class="task7-1" disabled >
+			<div class="task5-1" id="task5"></div>	
+			<div class="task5-1" id="task5"></div>	
+			<div class="task5-1" id="task5"></div>
+			<div class="task5-1" id="task5"></div>	
+			<div class="task5-1" id="task5"></div>	
+			<div class="task5-1" id="task5"></div>		
 		</div>
 		<div class="task task8"><span class="otstyp">task8</span><br>
-			<button onclick="task8()">столько минут прошло с 1970г</button>
-		</div>
-		<div class="task task9"><span class="otstyp">task9</span><br>
-			<button onclick="task9()">столько часов прошло с 1 марта 1988 года</button>
-		</div>
-		<div class="task task10"><span class="otstyp">task10</span>
-			
-			<button onclick="task10()">Количество секунд с начала дня</button>
+			<table border="1" cellpadding="0" cellspacing="0" >
+				<tr>
+					<th>Часы</th>
+					<th>Минуты</th>
+					<th>Секунды</th>
+				</tr>
+				<tr>
+					<td id="hours"></td>
+					<td id="minutes"></td>
+					<td id="seconds"></td>
+				</tr>
+			</table>
 		</div>
 		
-	
 </body>
 <script src="script.js"></script>
 </html>

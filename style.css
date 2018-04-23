@@ -44,3 +44,37 @@ input{
 .task7-1{
   width: 400px;
 }
+#task1{
+  font-size: 40px;
+  margin:auto;
+}
+.task3{
+  text-align: center;
+}
+.task4{
+  text-align: center;
+}
+.task5{
+  text-align: center;
+}
+.task51{
+  width: 150px;
+  height: 150px;
+  margin: auto;
+}
+.task5-1{
+  background: url(icon/no-translate-detected_318-49940.jpg) no-repeat center;
+  background-size: 150px 150px;
+}
+.task5-2{
+  background: url(icon/no-translate-detected_318-50200.jpg) no-repeat center;
+  background-size: 150px 150px;
+}
+.task5-3{
+  background: url(icon/no-translate-detected_318-49685.jpg) no-repeat center;
+  background-size: 150px 150px;
+}
+.task5-4{
+  background: url(icon/no-translate-detected_318-68102.jpg) no-repeat center;
+  background-size: 150px 150px;
+}
