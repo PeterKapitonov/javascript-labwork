@@ -38,43 +38,29 @@ input{
   padding:10pt;
 }
 
-.task7>input{
-  font-size: 25px;
-}
-.task7-1{
-  width: 400px;
-}
-#task1{
-  font-size: 40px;
-  margin:auto;
-}
-.task3{
+.task1{
   text-align: center;
 }
-.task4{
-  text-align: center;
-}
-.task5{
-  text-align: center;
-}
-.task51{
+.task11{
   width: 150px;
   height: 150px;
   margin: auto;
+   float:left; 
+   margin: 20px;
 }
-.task5-1{
+.task1-1{
   background: url(icon/no-translate-detected_318-49940.jpg) no-repeat center;
   background-size: 150px 150px;
 }
-.task5-2{
+.task1-2{
   background: url(icon/no-translate-detected_318-50200.jpg) no-repeat center;
   background-size: 150px 150px;
 }
-.task5-3{
+.task1-3{
   background: url(icon/no-translate-detected_318-49685.jpg) no-repeat center;
   background-size: 150px 150px;
 }
-.task5-4{
+.task1-4{
   background: url(icon/no-translate-detected_318-68102.jpg) no-repeat center;
   background-size: 150px 150px;
 }
