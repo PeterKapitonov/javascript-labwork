@@ -1,28 +1,48 @@
 function task1(){
-	function umnog(num){
-		return alert(num**2);
+	arr=[1,23,324,23,3,2,23,5,3,5,32,24,24];
+	for(var i=0;i<arr.length;i++){
+		if(arr[i]==5){
+			var a=1;
+			break;
+		}
+		
 	}
-	umnog(111);
+	if (a==1){
+		alert('yes');
+	}else{
+		alert('no');
+	}
 }
 function task2(){
-	function sum(a, b) {
-		return a + b;
+	var a=Number(prompt('Введите число:'));
+	flag = 0;
+	for(var i=2;i<a;i++){
+		if(a%i==0){
+			flag = true
+			break;
+		}
 	}
-	alert(sum(100,7));
+	if(flag == true){
+		alert('true');
+	}else{
+		alert('false');
+	}
+
 }
 
 function task3(){
-	function func(a, b, c) {
-		return (a - b) / c;
+	var arr=[1,2,13,13,4,32];
+	flag = 0;
+	for(var i=1;i<arr.length;i++){
+		if(arr[i]==arr[i-1]){
+			flag = true
+			break;
+		}
 	}
-	alert(func(100,7,3));
-}
-function task4(){
-	function getDay(num) {
-		var arr = ['пн', 'вт', 'ср', 'чт', 'пт', 'сб', 'вс'];
-		return arr[num - 1];
+	if(flag == true){
+		alert('ДА');
+	}else{
+		alert('НЕТ');
 	}
-	alert(getDay(5));
 }
-
 
