@@ -1,98 +1,74 @@
 
 function task1(){
-	var bat=document.getElementById('task1');
-	bat.innerHTML='<b>текст стал жирным</b>';
+	var now = new Date();
+	alert(now.getDate());
 }
 function task2(){
-	var bat=document.getElementById('task2');
-	bat.innerHTML='<h3>текст стал h3</h3>';
+	var now = new Date();
+	var month_date=['январь','февраль','март','апрель','май','июнь','июль','август','сентаябр','октябрь','ноябрь','декабрь']
+	
+	alert(month_date[now.getMonth()]);
 }
 
 function task3(){
-	var bat=document.getElementById('task3');
-	var elem=bat.innerHTML;
-	bat.innerHTML='<h3>'+elem+'</h3>';
+	var now = new Date();
+	alert(now.getFullYear());
 }
 
 function task4(){
-	var elem1=document.getElementById('task4-1');
-	var elem2=document.getElementById('task4-2');
-	var elem3=document.getElementById('task4-3');
-	elem3.innerHTML=Number(elem1.value)+Number(elem2.value);
+	function getZero(num){
+		if (num > 0 && num < 10) { 
+			return '0' + num;
+		} else {
+			return num;
+		}
+	}
+	var date = new Date();
+	alert(date.getHours() + ':' + date.getMinutes() + ':' + date.getSeconds() + ' ' + getZero(date.getDate()) + '.' + getZero(date.getMonth() + 1) + '.' + date.getFullYear());
+	
 }
 
 function task5(){
-	var change=document.getElementsByTagName('p');
-	for (var i = 0; i < change.length; i++){
-		change[i].innerHTML = 'Ку-ку!';
-	}
+	var date=new Date();
+	alert(date.getDay());
 }
 
 function task6(){
-	var ordinal=document.getElementsByClassName('www');
-	for(var i=0;i<ordinal.length;i++){
-		ordinal[i].innerHTML=String(i);
-	}
+	var date = new Date();
+	var day = date.getDay();
+
+	function showDay(day) {
+		var days = ['вс', 'пн', 'вт', 'ср', 'чт', 'пт', 'сб'];
+		return days[day];
+	}	
+
+	alert(showDay(day));
 }
 
 function task7(){
-	var elem=document.querySelectorAll('p.www');
-	for(var i=0;i<elem.length;i++){
-		elem[i].innerHTML=String(i);
-	}
+	alert(day);
+	alert(mon);
 }
 
 function task8(){
-	var elclass=document.getElementById('my-class');
-	alert('Назваие класса абзаца:'+elclass.getAttribute('class'));
-}
-
-function task9_1(){
-	var elem=document.getElementById('task9');
-	alert(elem.getAttribute('class'));
-}
-
-function task9_2(){
-	var elem=document.getElementById('task9');
-	elem.removeAttribute('class');
-	alert('Атрибут class удалён, нажмите первую кнопку чтобы проверить это');
+	var date = new Date();
+	var minute = Math.floor(date.getTime() / (1000 * 60));
+	alert(minute);
 
 }
 
-function task10_1(){
-	var elem=document.getElementById('task10');
-	alert(elem.getAttribute('class'));
+function task9(){
+	var old=Date.parse('1988-01-01');
+	var new_date=new Date();
+	var diff=Math.floor((new_date-old)/(1000*60*60));
+	alert(diff);
 }
 
-function task10_2(){
-	var elem=document.getElementById('task10');
- 	elem.setAttribute('class','task10-myclass');
- 	elem.innerHTML='Класс задает красный цвет.';
- 	
+function task10(){
+	var new_date=new Date();
+	var old=new Date(new_date.getFullYear(), new_date.getMonth(), new_date.getDate(), 0, 0, 0);
+	var result = Math.floor((new_date.getTime() - old.getTime()) / 1000);
+	alert(result);
 }
 
-function task11(elem){
-	var text = document.getElementById('text-11');
-	text.innerHTML = elem.value;
-}
 
-function task12(){
-	var elements = document.getElementsByTagName('a');
-	for (var i = 0; i < elements.length; i++){
-		elements[i].innerHTML = elements[i].innerHTML+' ('+elements[i].getAttribute('href')+')';
-	}
-}
-function task13(elem){
-	elem.disabled  =  true;
-	elem.value  =  'О, на меня нельзя больше нажать!';
-	var test = document.getElementById('text-13');
-	test.innerHTML = 'Привет, мир!';
-	test.style.color  =  'red';
-}
-
-function task14(){
-	var elements = document.getElementsByTagName('p');
-	for (var i = 0; i < elements.length; i++){
-		elements[i].innerHTML = i;
-	}
-}
