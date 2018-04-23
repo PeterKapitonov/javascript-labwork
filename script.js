@@ -1,111 +1,108 @@
 function task1(){
-	var a=Number(prompt('Введите а:')),b=Number(prompt('Введите b:'));
-	var ostat=a%b;
-	alert('остаток от деления а на b = '+ostat);
+	var st="js";
+	var st1=st.toUpperCase();
+	alert(st);
+	alert(st1);
 }
 function task2(){
-	var a=Number(prompt('Введите а:')),b=Number(prompt('Введите b:'));
-	var ostat=a%b;
-	if(ostat==0){
-		alert('Делиться без остсатка, результат деления: '+(a/b));
-	}else{
-		alert('Делится с остатком. Остаток: '+ ostat);
-	}
+	var a=prompt('Введите строку:');
+	var st=a.toLowerCase();
+	alert(st);
 }
 
 function task3(){
-	var a=2,b=10;
-	var st= Math.pow(a,b);//возведение a в b-ую степень
-	alert(st);
+	var a='я учу javascript!';
+	alert('длина строки "'+a+'" = '+a.length);
 }
 
 function task4(){
-	var st= Math.sqrt(245);//квадратный корень числа 245
-	alert(st);
+	var a='я учу javascript!';
+	alert(a.substr(2,3));
+	alert(a.substring(2,5));
+	alert(a.slice(2,5));
 }
 
 function task5(){
-	var arr=[4, 2, 5, 19, 13, 0, 10];
-	var koren,summ=0;
-	for(var i=0;i<arr.length;i++){
-		summ+=arr[i]**3;
-	}
-	koren=Math.sqrt(summ);
-	document.write(summ);
+	var a='я учу javascript!';
+	str=a.indexOf('учу');
+	str1=a.indexOf('учу1');
+	alert(str);
+	alert(str1);
 }
 
 function task6(){
-	var num=379;
-	num1=Math.sqrt(num);
-	for(var i=0;i<20;i++){
-		document.write(num1.toFixed(i)+'<br>');
+	var st='Ты учил js?';
+	var num=5,result='';
+	if(st.length>num){
+		result+=st.substr(0,num)+'...';
+	}else{
+		result=st;
 	}
+	alert(result);
 }
 
 function task7(){
-	var num=Math.sqrt(587);
-	document.write('квадратный корень равен: '+num+'<br>');
-	document.write('Функция ceil: '+Math.ceil(num)+'<br>');
-	document.write('Функция floor: '+Math.floor(num)+'<br>');
+	var str='Я-учу-javascript!';
+	a=num.replace(/-/g,'!');
+	alert(a);
 }
 
 function task8(){
-	var num=[ 4, -2, 5, 19, -130, 0, 10],num_max,num_min;
-	num_max=Math.max.apply(null,num);
-	num_min=Math.min.apply(null,num);	
-	document.write(num_max+"<br>");
-	document.write(num_min);
+	var str='Я учу javascript!';
+	var a=str.split(' ');
+	alert(a);
 }
 
 function task9(){
-	function getRandomInt(min,max){
-		return Math.floor(Math.random()*(max-min+1))+min;
-	}
-	document.write(getRandomInt(-10,100));
-
+	var str='Я учу javascript!';
+	var a=str.split('');
+	alert(a);
 }
 
 function task10(){
-	var arr=[];
-	for(var i=0;i<=20;i++){
-		arr[i]=Math.ceil(Math.random()*(100-1+1))+1;
+	var date='2025-12-31';
+	var num=date.split('-');
+	var date1='';
+	for(var i=num.length;i>0;i--){
+		date1+=num[i-1]+'.';
 	}
-	for(j=0;j<arr.length;j++){
-		document.write(arr[j]+'<br>');
-	}
+	alert(date1);
 }
 
 function task11(){
-	var a=Number(prompt('Введите число а:')),b=Number(prompt('Введите число b:'));
-	var modraz=Math.abs(a-b);
-	alert(modraz);
+	var arr=['я', 'учу', 'javascript', '!'];
+	arr=arr.join('+');
+	alert(arr);
 }
 
 function task12(){
-	var a=Number(prompt('Введите число а:')),b=Number(prompt('Введите число b:'));
-	var c=Math.abs(a-b);
-	alert(c);
-
+	var a='строка';
+	var a1=a[0].toUpperCase()+a.slice(1);
+	alert(a1);
 }
-
 function task13(){
-	var arr=[12, 15, 20, 25, 59, 79];
-	var sred=0;
-	for(var i=0;i<arr.length;i++){
-		sred+=arr[i];
+	var str='слова слова слова';
+	var arr1=str.split(' '),str1='';
+	for(var i=0;i<arr1.length;i++){
+		str1+=arr1[i][0].toUpperCase()+arr1[i].slice(1)+' ';
 	}
-	alert(sred+' '+arr.length);
-	sred=sred/arr.length;
-	alert(sred);
+	alert(str1);
 }
 
 function task14(){
-	var a=Number(prompt('Введите число а:'));
-	fact=1;
-	for(var i=1;i<=a;i++){
-		fact*=i;
+	var str='var_test_text_mazol_hello_world';
+	var arr1=str.split('_'),str1='';
+	for(var i=0;i<arr1.length;i++){
+		if(i==0){
+			str1+=arr1[i]+' ';
+		}if(i==arr1.length){
+			str1+=arr1[i][0].toUpperCase()+arr1[i].slice(1);
+
+		}else{
+			str1+=arr1[i][0].toUpperCase()+arr1[i].slice(1)+' ';
+		}	
 	}
-	document.write(a+'!='+fact);
+	alert(str1);
 }
 
 
