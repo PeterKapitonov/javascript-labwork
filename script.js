@@ -1,108 +1,82 @@
 function task1(){
-	var st="js";
-	var st1=st.toUpperCase();
-	alert(st);
-	alert(st1);
+	var arr1=[1,2,3];
+	var arr2=[4,5,6];
+	alert(arr1.concat(arr2));
 }
 function task2(){
-	var a=prompt('Введите строку:');
-	var st=a.toLowerCase();
-	alert(st);
+	var arr=[1,2,3,3,4];
+	arr.reverse();
+	alert(arr);
 }
 
 function task3(){
-	var a='я учу javascript!';
-	alert('длина строки "'+a+'" = '+a.length);
+	var arr=[1,2,3];
+	arr.push(4,4,5,6);
+	alert(arr);
 }
-
 function task4(){
-	var a='я учу javascript!';
-	alert(a.substr(2,3));
-	alert(a.substring(2,5));
-	alert(a.slice(2,5));
+	var arr=[1,2,3];
+	arr.unshift(4,4,5,6);
+	alert(arr);
 }
 
 function task5(){
-	var a='я учу javascript!';
-	str=a.indexOf('учу');
-	str1=a.indexOf('учу1');
-	alert(str);
-	alert(str1);
+	var arr= ['js', 'css', 'jq'];
+	alert(arr.shift());
 }
 
 function task6(){
-	var st='Ты учил js?';
-	var num=5,result='';
-	if(st.length>num){
-		result+=st.substr(0,num)+'...';
-	}else{
-		result=st;
-	}
-	alert(result);
+	var arr= ['js', 'css', 'jq'];
+	alert(arr.pop());
 }
 
 function task7(){
-	var str='Я-учу-javascript!';
-	a=num.replace(/-/g,'!');
-	alert(a);
+	var arr=[1, 2, 3, 4, 5];
+	var arr1=arr.slice(0,3);
+	alert(arr1);
 }
 
 function task8(){
-	var str='Я учу javascript!';
-	var a=str.split(' ');
-	alert(a);
+	var arr=[1, 2, 3, 4, 5];
+	var arr1=arr.slice(3);
+	alert(arr1);
 }
 
 function task9(){
-	var str='Я учу javascript!';
-	var a=str.split('');
-	alert(a);
+	var arr=[1, 2, 3, 4, 5];
+	arr.splice(1,2);
+	alert(arr);
 }
 
 function task10(){
-	var date='2025-12-31';
-	var num=date.split('-');
-	var date1='';
-	for(var i=num.length;i>0;i--){
-		date1+=num[i-1]+'.';
-	}
-	alert(date1);
+	var arr=[1, 2, 3, 4, 5];
+	var arr1=arr.splice(1,3);
+	alert(arr1);
 }
 
 function task11(){
-	var arr=['я', 'учу', 'javascript', '!'];
-	arr=arr.join('+');
+	var arr = [1, 2, 3, 4, 5];
+	arr.splice(3, 0, 'a', 'b', 'c');
 	alert(arr);
 }
 
 function task12(){
-	var a='строка';
-	var a1=a[0].toUpperCase()+a.slice(1);
-	alert(a1);
+	var arr = [1, 2, 3, 4, 5];
+	arr.splice(1, 0, 'a', 'b');
+	arr.splice(6, 0, 'c');
+	arr.splice(8, 0, 'e');
+	alert(arr);
 }
 function task13(){
-	var str='слова слова слова';
-	var arr1=str.split(' '),str1='';
-	for(var i=0;i<arr1.length;i++){
-		str1+=arr1[i][0].toUpperCase()+arr1[i].slice(1)+' ';
-	}
-	alert(str1);
+	var arr = [3, 4, 1, 2, 7];
+	arr.sort();
+	alert(arr);
 }
 
 function task14(){
-	var str='var_test_text_mazol_hello_world';
-	var arr1=str.split('_'),str1='';
-	for(var i=0;i<arr1.length;i++){
-		if(i==0){
-			str1+=arr1[i]+' ';
-		}if(i==arr1.length){
-			str1+=arr1[i][0].toUpperCase()+arr1[i].slice(1);
-
-		}else{
-			str1+=arr1[i][0].toUpperCase()+arr1[i].slice(1)+' ';
-		}	
-	}
-	alert(str1);
+	var arr = {js: 'test', jq: 'hello', css: 'world'};
+	var result = Object.keys(arr);
+	alert(result);
 }
 
 
