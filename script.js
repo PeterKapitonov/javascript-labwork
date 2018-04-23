@@ -1,36 +1,44 @@
 function task1(){
-	var arr = [];
-	var x ='x';
-	for(var i=1;i<100;i++){
-		arr.push(x);
-		x+='x';
-		document.write(arr+'<br>');
+	function isNumberInRange(n){
+		if(n>0 && n<10){
+			return true;
+		}else{
+			return false;
+		}
 	}
+	var a=prompt('Введите число:');
+	alert(isNumberInRange(a));
 }
 
 function task2(){
-	var arr = [];
-	for(var i=1;i<100;i++){
-		var num='';
-		for(var j=1;j<=i;j++){
-			num+=i;
+	function isNumberInRange(n){
+		if(n>0 && n<10){
+			return true;
+		}else{
+			return false;
 		}
-		arr.push(String(num));
-		arr=arr.slice(-1);
-		document.write(arr+'<br>');
 	}
+	var arr = [1,23,23,2,6,2,4,7,22];
+	var arr1=[];
+	for(var i=0;i<arr.length;i++){
+		if(isNumberInRange(arr[i])==true){
+			arr1.push(arr[i]);
+		}
+	}
+	alert(arr1);
 }
 
 function task3(){
-	function arrayFill(x,k){
-		array=[];
-		for(var i=0;i<k;i++){
-			array.push(String(x));
+	function getDigitsSum(т){
+		var m=String(m);
+		var summ=0;
+		for(var i=0;i<m.length;i++){
+			summ+=Number(m[i]);
 		}
-		return array;
+		return summ;
 	}
-	alert(arrayFill('Hello',6))
-	
+	m=getDigitsSum(1234234234);
+	alert(m);
 }
 
 function task4(){
