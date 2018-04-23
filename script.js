@@ -1,35 +1,28 @@
 function task1(){
-	var arr='hello world!';
-	var arr1=arr[0].toUpperCase()+arr.substr(1);
-	alert(arr1);
+	function umnog(num){
+		return alert(num**2);
+	}
+	umnog(111);
 }
 function task2(){
-	var str = '123456';
-	result = str.split('').reverse().join('');
-	alert(result);
+	function sum(a, b) {
+		return a + b;
+	}
+	alert(sum(100,7));
 }
 
 function task3(){
-	var str = '3751';
-	arr = str.split('');
-	arr.sort();
-	var result = arr.join('');
-	alert(result);
+	function func(a, b, c) {
+		return (a - b) / c;
+	}
+	alert(func(100,7,3));
 }
 function task4(){
-	var str = 'http://phphtml';
-	if (str.substr(0, 7) == 'http://') {
-		alert('Да');
-	} else {
-		alert('Нет');
-	}	
+	function getDay(num) {
+		var arr = ['пн', 'вт', 'ср', 'чт', 'пт', 'сб', 'вс'];
+		return arr[num - 1];
+	}
+	alert(getDay(5));
 }
 
-function task5(){
-	var str = 'index.html';
-	if (str.substr(-5) == '.html') {
-		alert('Да');
-	} else {
-		alert('Нет');
-	}
-}
+
