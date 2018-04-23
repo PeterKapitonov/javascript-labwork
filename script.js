@@ -1,56 +1,29 @@
 function task1(){
-	function ucfirst(stroka){
-		var sekta=stroka.split(' ');
-		var new_stroka='';
-		for(var i=0;i<sekta.length;i++){
-			new_stroka+=sekta[i][0].toUpperCase()+sekta[i].slice(1)+' ';
+	function func(arr) {
+		alert(arr[0]);
+		arr.splice(0, 1);
+		if (arr.length > 0) {
+			func(arr);
 		}
-		return new_stroka;
 	}
-	alert(ucfirst('hello world! good morning'));
+	var arr1=[1,123,4,42,23,4,423,23];
+	alert(func([arr1]));
 }
 
 function task2(){
-	function ucfirst(stroka){
-		var sekta=stroka.split('_');
-		var new_stroka=sekta[0]+'_';
-		for(var i=1;i<sekta.length;i++){
-			if(i<sekta.length-1){
-				new_stroka+=sekta[i][0].toUpperCase()+sekta[i].slice(1)+'_';
-			}else{
-				new_stroka+=sekta[i][0].toUpperCase()+sekta[i].slice(1);
-			}
-
+	function isNumberInRange(num){
+		var num_new=num.split('');
+		var sum=0;
+		for(var i=0;i<num_new.length;i++){
+			sum+=Number(num_new[i]);
 		}
-		return new_stroka;
-	}
-	alert(ucfirst('var_text_hello'));
-}
-
-function task3(){
-	function inArray(text,arr){
-		for(var i=0;i<arr.length;i++){
-			if(arr[i]==text){
-				return true;
-			}else{
-				return false;
-			}
-		}	
-	}
-	var arr=['hello','world','!'];
-	alert(inArray('hello',arr));
-}
-
-function task4(){
-	function inArray(num){
-		num_arr=num.split('');
-		var num='';
-		for(var i=0;i<num_arr.length;i+=2){
-			num+=num_arr[i+1]+num_arr[i];
+		alert(sum);
+		if(sum>9){
+			isNumberInRange(num-1);
 		}
-		return num;
-	}
-	alert(inArray('123456'));
 
+	}
+	var num='112344';
+	isNumberInRange(num);
 }
 
