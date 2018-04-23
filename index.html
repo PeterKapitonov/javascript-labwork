@@ -7,87 +7,111 @@
 	<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
 </head>
 <body>
-	<h1>Урок 19."Основы работы с DOM в JavaScript"</h1>
+	<h1>Урок 20."Задачи на работу с элементами страницы в JavaScript"</h1>
 	<div class="basis">
-		<div class="task task">
-			<span class="otstyp">task</span><br>
-				<input type="text" name="input" id="summ1" value=""> +
-				<input type="text" name="input" id="summ2" value="">
-				<button onclick="buttonsClick()">Результат</button>
-				<input type="text" name="input" id="summ3" value=""><br>
-				<input type="text" name="input" id="raz1" value=""> -
-				<input type="text" name="input" id="raz2" value="">
-				<button onclick="buttonsClick()">Результат</button>
-				<input type="text" name="input" id="raz3" value=""><br>
-				<input type="text" name="input" id="multi1" value=""> *
-				<input type="text" name="input" id="multi2" value="">
-				<button onclick="buttonsClick()">Результат</button>
-				<input type="text" name="input" id="multi3" value=""><br>
-				<input type="text" name="input" id="div1" value=""> /
-				<input type="text" name="input" id="div2" value="">
-				<button onclick="buttonsClick()">Результат</button>
-				<input type="text" name="input" id="div3" value=""><br>
-			
-		</div>
-		
-		<div class="task task1"><span class="otstyp">task1</span>
-			<button onclick="alert('Привет!')">Нажми на меня!</button>
+		<div class="task task1">
+			<span>task1</span><br>
+			<span class="otstyp" id="task1">Нажми на кнопку и текст измениться</span>
+			<button onclick="task1()">Нажми на меня!</button>
 
 		</div>
-		<div class="task task2"><span class="otstyp">task2</span>
-			<button onmouseover="alert('Привет!')">Наваеди на меня!</button>
+		<div class="task task2">
+			<span>task2</span><br>
+			<span class="otstyp" id="task2">Нажми на кнопку и текст измениться</span>
+			<button onclick="task2()">Нажми на меня!</button>
 		</div>
-		<div class="task task3"><span class="otstyp">task3</span>
-			<button ondblclick="alert('Привет!')">Нажми на меня дважды!</button>
+		<div class="task task3">
+			<span>task3</span><br>
+			<span class="otstyp" id="task3">Нажми на кнопку и текст измениться</span>
+			<button onclick="task3()">Нажми на меня!</button>
 		</div>
-		<div class="task task4"><span class="otstyp">task4</span></div>
-		<div class="task task5"><span class="otstyp">task5</span>
-			<input type="text" id="kyky" value="Ку-ку">
-			<button onclick="task5()">Нажми!</button>
+		<div class="task task4">
+			<span>task4</span><br>
+			<input type="text" id="task4-1">+
+			<input type="text"  id="task4-2">=
+			<span id="task4-3">0</span><br>
+			<button onclick="task4()">Нажми чтобы сложить</button>
+		</div>
+		<div class="task task5">
+			<span>task5</span><br>
+			<p>При нажатии на кнопку текст в каждом абзаце поменяется.</p>
+			<p>При нажатии на кнопку текст в каждом абзаце поменяется.</p>
+			<p>При нажатии на кнопку текст в каждом абзаце поменяется.</p>
+			<p>При нажатии на кнопку текст в каждом абзаце поменяется.</p>
+			<h2>А я h2 и не поменяюсь!</h2>
+			<button onclick="task5()">Нажми на меня!</button>		
 		</div>
 		<div class="task task6"><span class="otstyp">task6</span>
-
-			<input type="text" id="obmen" value="Ку-ку">
+			<h2 class="www">Заголовок с классом www.</h2>
+			<p class="www">Абзац с классом www.</p>
+			<p class="www">Абзац с классом www.</p>
+			<p>Просто абзац, не поменяется.</p>
 			<button onclick="task6()">Нажми!</button>
 		</div>
-		<div class="task task7"><span class="otstyp">task7</span></div>
-		<div class="task task8"><span class="otstyp">task8</span></div>
-		<div class="task task9"><span class="otstyp">task9</span></div>
-		<div class="task task10"><span class="otstyp">task10</span></div>
-		<div class="task task11"><span class="otstyp">task11</span></div>
-		<div class="task task12"><span class="otstyp">task12</span></div>
-		<div class="task task13"><span class="otstyp">task13</span></div>
-		<div class="task task14"><span class="otstyp">task14</span></div>
-		<div class="task task15"><span class="otstyp">task15</span></div>
-		<div class="task task16"><span class="otstyp">task16</span></div>
-		<div class="task task17"><span class="otstyp">task17</span></div>
-		<div class="task task18"><span class="otstyp">task18</span></div>
-		<div class="task task19"><span class="otstyp">task19</span></div>
-		<div class="task task20"><span class="otstyp">task20</span></div>
-		<div class="task task21"><span class="otstyp">task21</span></div>
-		<div class="task task22"><span class="otstyp">task22</span></div>
-		<div class="task task23"><span class="otstyp">task23</span></div>
-		<div class="task task24"><span class="otstyp">task24</span></div>
-		<div class="task task25"><span class="otstyp">task25</span><BR>
-			<input type="text" id="value" value=""><BR>
-			<button onclick="task25('+')">+</button>
-			<button onclick="task25('-')">-</button>
-			<button onclick="task25('/')">/</button>
-			<button onclick="task25('*')">*</button>
-			<button onclick="task25(1)">1</button>
-			<button onclick="task25(2)">2</button>
-			<button onclick="task25(3)">3</button>
-			<button onclick="task25(4)">4</button>
-			<button onclick="task25(5)">5</button>
-			<button onclick="task25(6)">6</button>
-			<button onclick="task25(7)">7</button>
-			<button onclick="task25(8)">8</button>
-			<button onclick="task25(9)">9</button>
-			<button onclick="task25('C')">C</button>
-			<button class="value_numk" onclick="task25('=')">=</button>
+		<div class="task task7"><span class="otstyp">task7</span>
+			<h2 class="www">Заголовок с классом www, не поменяется.</h2>
+			<p class="www">Абзац с классом www.</p>
+			<p class="www">Абзац с классом www.</p>
+			<p class="www">Абзац с классом www.</p>
+			<p>Просто абзац, не поменяется.</p>
+			<button onclick="task7()">Нажми!</button>
 		</div>
-
-	</div>
+		<div class="task task8"><span class="otstyp">task8</span>
+			<p class="my-class" id="my-class">Абзац с class="my-class".</p>
+			<button onclick="task8()">Нажми!</button>
+		</div>
+		<div class="task task9"><span class="otstyp">task9</span>
+			<p class="task9-myclass" id="task9">Абзац с class="my-class". Класс задает оранжевый цвет.</p>
+			<button onclick="task9_1()">Нажми и я выведу класс абзаца</button>
+			<button onclick="task9_2()">Нажми и атрибут class удалиться</button>
+		</div>
+		<div class="task task10"><span class="otstyp">task10</span>
+			<p class="task9-myclass" id="task10">Абзац с class="my-class". Класс задает оранжевый цвет.</p>
+			<button onclick="task10_1()">Нажми и я выведу класс абзаца</button>
+			<button onclick="task10_2()">Нажми и цвет абзаца измениться на другой цвет</button></div>
+		<div class="task task11"><span class="otstyp">task11</span>
+			<input type="text" value="" placeholder="Введи в меня текст!" id="task11" onkeyup="task11(this)">
+			<span id="text-11"></span>
+		</div>
+		<div class="task task12"><span class="otstyp">task12</span><br><br>
+			<a href="google.com">ccылка на гугл</a><br><br>
+			<a href="yandex.ru">ccылка на яндекс</a><br><br>
+			<a href="mail.ru">ccылка на маил</a><br><br>
+			<button onclick="task12()">Нажми на меня!</button>
+		</div>
+		<div class="task task13"><span class="otstyp">task13</span>
+			<p id="text-13">При нажатии на кнопку текст в абзаце поменяется.
+			</p>
+			<input type="submit" value="Нажмите на меня!"  onclick="task13(this)">
+		</div>
+		<div class="task task14"><span class="otstyp">task14</span>
+			<p>	
+		Абзац с текстом.
+	</p>
+	<p>
+		Абзац с текстом.
+	</p>
+	<p>
+		Абзац с текстом.
+	</p>
+	<p>
+		Абзац с текстом.
+	</p>
+	<p>
+		Абзац с текстом.
+	</p>
+	<p>
+		Абзац с текстом.
+	</p>
+	<p>
+		Абзац с текстом.
+	</p>
+	<p>
+		Абзац с текстом.
+	</p>
+	<input type="submit" value="Нажмите на меня!" onclick="task14()">
+		</div>
+		
 	
 </body>
 <script src="script.js"></script>

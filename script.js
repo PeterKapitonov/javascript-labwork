@@ -1,202 +1,98 @@
-function buttonsClick(){
-	var input1 = document.getElementById('summ1');
-	var input2 = document.getElementById('summ2');
-	var input3 = document.getElementById('summ3');
-	input3.value = Number(input1.value)+Number(input2.value);
-	if(input3.value==0  ){
-		input3.value = '';
-	}
 
-	var input1 = document.getElementById('raz1');
-	var input2 = document.getElementById('raz2');
-	var input3 = document.getElementById('raz3');
-	input3.value = Number(input1.value)-Number(input2.value);
-	if(input3.value==0  ){
-		input3.value =0;
-	}
-
-	var input1 = document.getElementById('multi1');
-	var input2 = document.getElementById('multi2');
-	var input3 = document.getElementById('multi3');
-	input3.value = Number(input1.value)*Number(input2.value);
-	if(input3.value==0  ){
-		input3.value = '';
-	}
-
-	var input1 = document.getElementById('div1');
-	var input2 = document.getElementById('div2');
-	var input3 = document.getElementById('div3');
-	input3.value = Number(input1.value)/Number(input2.value);
-	if(input3.value==0 || isNaN(input3.value) ){
-		input3.value = '';
-	}
-}
 function task1(){
-	var arr = ['a','b','c'];
-	alert(arr[0]);
-	alert(arr[1]);
-	alert(arr[2]);
+	var bat=document.getElementById('task1');
+	bat.innerHTML='<b>текст стал жирным</b>';
 }
 function task2(){
-	var arr = ['a','b','c'];
-	alert(arr[0]);
-	alert(arr[1]);
-	alert(arr[2]);
+	var bat=document.getElementById('task2');
+	bat.innerHTML='<h3>текст стал h3</h3>';
 }
 
 function task3(){
-	var arr = ['a', 'b', 'c', 'd','e','f'] ;
-	alert(arr[0]+arr[1]);
-	alert(arr[2]+arr[3]);
-	alert(arr[4]+arr[5]);
-	alert(arr[0]+'+'+arr[1]+','+arr[2]+'+'+arr[3]+','+arr[4]+'+'+arr[5]);
-	
+	var bat=document.getElementById('task3');
+	var elem=bat.innerHTML;
+	bat.innerHTML='<h3>'+elem+'</h3>';
 }
 
 function task4(){
-	var arr = [2,5, 3, 9] ;
-	alert(arr[0]*arr[1]+', '+arr[2]*arr[3]);
+	var elem1=document.getElementById('task4-1');
+	var elem2=document.getElementById('task4-2');
+	var elem3=document.getElementById('task4-3');
+	elem3.innerHTML=Number(elem1.value)+Number(elem2.value);
 }
 
 function task5(){
-	var input=document.getElementById('kyky');
-	alert(input.value);
+	var change=document.getElementsByTagName('p');
+	for (var i = 0; i < change.length; i++){
+		change[i].innerHTML = 'Ку-ку!';
+	}
 }
 
 function task6(){
-	var obmen=document.getElementById('obmen');
-	if(obmen.value =='Поменял значение'){
-		obmen.value ='Нажми!';
-	}else{
-		obmen.value ='Поменял значение';
+	var ordinal=document.getElementsByClassName('www');
+	for(var i=0;i<ordinal.length;i++){
+		ordinal[i].innerHTML=String(i);
 	}
 }
 
 function task7(){
-	var week={1:'Понедельник',2:'Вторник',3:'Среда',4:'Четверг',5:'Пятница',6:'Суббота',7:'Воскресенье'};
-	var num = prompt('Номер недели: ');
-	alert(week[num]);
-}
-
-function task8(){
-	var obj = {1:'пн', 2:'вт', 3:'ср', 4:'чт', 5:'пт', 6:'сб', 7:'вс'};
-	var day = 3;
-	alert(obj[day]);
-}
-
-function task9(){
-	var arr = [ [1, 2, 3], [4, 5, 6], [7,8,9] ];
-	alert(arr[1][0]);
-}
-
-function task10(){
-	var obj= {js:['jQuery', 'Angular'], php: 'hello', css: 'world'};
-	alert(obj.js[0]);
-}
-
-function task11(){
-	var arr = {
-	'ru':['пн', 'вт', 'ср', 'чт', 'пт', 'сб', 'вс'],
-	'en':['mn', 'ts', 'wd', 'th', 'fr', 'st', 'sn'],
-};
-	alert(arr['ru'][0]);
-	alert(arr['en'][2]);
-}
-
-function task12(){
-	var arr = {
-	'ru':['пн', 'вт', 'ср', 'чт', 'пт', 'сб', 'вс'],
-	'en':['mn', 'ts', 'wd', 'th', 'fr', 'st', 'sn'],
-};
-	var lang = 'ru';
-	var day = 3;
-	alert(arr[lang][day]);
-}
-function task1(){
-	var arr = ['a','b','c'];
-	alert(arr[0]);
-	alert(arr[1]);
-	alert(arr[2]);
-}
-function task2(){
-	var arr = ['a','b','c'];
-	alert(arr[0]);
-	alert(arr[1]);
-	alert(arr[2]);
-}
-
-function task3(){
-	var arr = ['a', 'b', 'c', 'd','e','f'] ;
-	alert(arr[0]+arr[1]);
-	alert(arr[2]+arr[3]);
-	alert(arr[4]+arr[5]);
-	alert(arr[0]+'+'+arr[1]+','+arr[2]+'+'+arr[3]+','+arr[4]+'+'+arr[5]);
-	
-}
-
-function task4(){
-	var arr = [2,5, 3, 9] ;
-	alert(arr[0]*arr[1]+', '+arr[2]*arr[3]);
-}
-
-function task5(){
-	var input=document.getElementById('kyky');
-	alert(input.value);
-}
-
-function task6(){
-	var obmen=document.getElementById('obmen');
-	if(obmen.value =='Поменял значение'){
-		obmen.value ='Нажми!';
-	}else{
-		obmen.value ='Поменял значение';
+	var elem=document.querySelectorAll('p.www');
+	for(var i=0;i<elem.length;i++){
+		elem[i].innerHTML=String(i);
 	}
 }
 
-function task7(){
-	var week={1:'Понедельник',2:'Вторник',3:'Среда',4:'Четверг',5:'Пятница',6:'Суббота',7:'Воскресенье'};
-	var num = prompt('Номер недели: ');
-	alert(week[num]);
-}
-
 function task8(){
-	var obj = {1:'пн', 2:'вт', 3:'ср', 4:'чт', 5:'пт', 6:'сб', 7:'вс'};
-	var day = 3;
-	alert(obj[day]);
+	var elclass=document.getElementById('my-class');
+	alert('Назваие класса абзаца:'+elclass.getAttribute('class'));
 }
 
-function task9(){
-	var arr = [ [1, 2, 3], [4, 5, 6], [7,8,9] ];
-	alert(arr[1][0]);
+function task9_1(){
+	var elem=document.getElementById('task9');
+	alert(elem.getAttribute('class'));
 }
 
-function task10(){
-	var obj= {js:['jQuery', 'Angular'], php: 'hello', css: 'world'};
-	alert(obj.js[0]);
+function task9_2(){
+	var elem=document.getElementById('task9');
+	elem.removeAttribute('class');
+	alert('Атрибут class удалён, нажмите первую кнопку чтобы проверить это');
+
 }
 
-function task11(){
-	var arr = {
-	'ru':['пн', 'вт', 'ср', 'чт', 'пт', 'сб', 'вс'],
-	'en':['mn', 'ts', 'wd', 'th', 'fr', 'st', 'sn'],
-};
-	alert(arr['ru'][0]);
-	alert(arr['en'][2]);
+function task10_1(){
+	var elem=document.getElementById('task10');
+	alert(elem.getAttribute('class'));
+}
+
+function task10_2(){
+	var elem=document.getElementById('task10');
+ 	elem.setAttribute('class','task10-myclass');
+ 	elem.innerHTML='Класс задает красный цвет.';
+ 	
+}
+
+function task11(elem){
+	var text = document.getElementById('text-11');
+	text.innerHTML = elem.value;
 }
 
 function task12(){
-	var arr = {
-	'ru':['пн', 'вт', 'ср', 'чт', 'пт', 'сб', 'вс'],
-	'en':['mn', 'ts', 'wd', 'th', 'fr', 'st', 'sn'],
-};
-	var lang = 'ru';
-	var day = 3;
-	alert(arr[lang][day]);
+	var elements = document.getElementsByTagName('a');
+	for (var i = 0; i < elements.length; i++){
+		elements[i].innerHTML = elements[i].innerHTML+' ('+elements[i].getAttribute('href')+')';
+	}
+}
+function task13(elem){
+	elem.disabled  =  true;
+	elem.value  =  'О, на меня нельзя больше нажать!';
+	var test = document.getElementById('text-13');
+	test.innerHTML = 'Привет, мир!';
+	test.style.color  =  'red';
 }
 
-function task25(num){
-	var value=document.getElementById('value');
-	value.value+=num;
+function task14(){
+	var elements = document.getElementsByTagName('p');
+	for (var i = 0; i < elements.length; i++){
+		elements[i].innerHTML = i;
+	}
 }
-
-

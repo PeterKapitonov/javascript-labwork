@@ -48,3 +48,25 @@ input{
 .value_numk{
   width: 500px;
 }
+.task5{
+  font-size: 18px;
+}
+.task7{
+   font-size: 18px;
+}
+.task9-myclass{
+  color: orange;
+}
+.task10-myclass{
+  color:red;
+}
+.task12{
+  font-size: 15px;
+}
+.task13>input{
+  height: 30px; /* Высота блока */
+    width: 400px;
+  }
+.task14{
+  font-size: 10px;
+}
