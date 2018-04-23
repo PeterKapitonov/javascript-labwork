@@ -1,79 +1,189 @@
 function task1(){
-	var arr = ['a','b','c'];
-	alert(arr);
+	var a=Number(prompt('Введите число:'));
+	if(a==0){
+		alert('Верно!');
+	}else{
+		alert( 'Неверно');
+	}
 }
 
 function task2(){
-	var arr = ['a','b','c'];
-	alert(arr[0]);
-	alert(arr[1]);
-	alert(arr[2]);
+	var a=Number(prompt('Введите число:'));
+	if(a>0){
+		alert('Верно!');
+	}else{
+		alert( 'Неверно');
+	}
 }
 
 function task3(){
-	var arr = ['a', 'b', 'c', 'd','e','f'] ;
-	alert(arr[0]+arr[1]);
-	alert(arr[2]+arr[3]);
-	alert(arr[4]+arr[5]);
-	alert(arr[0]+'+'+arr[1]+','+arr[2]+'+'+arr[3]+','+arr[4]+'+'+arr[5]);
-	
+	var a=Number(prompt('Введите число:'));
+	if(a<0){
+		alert('Верно!');
+	}else{
+		alert( 'Неверно');
+	}
 }
 
 function task4(){
-	var arr = [2,5, 3, 9] ;
-	alert(arr[0]*arr[1]+', '+arr[2]*arr[3]);
+	var a=Number(prompt('Введите число:'));
+	if(a>=0){
+		alert('Верно!');
+	}else{
+		alert( 'Неверно');
+	}
+
 }
 
 function task5(){
-	var obj = {a: 1, b: 2, c: 3};
-	alert(obj['c']);
-	alert(obj.a);
+	var a=Number(prompt('Введите число:'));
+	if(a<=0){
+		alert('Верно!');
+	}else{
+		alert( 'Неверно');
+	}
 }
 
 function task6(){
-	var obj = {Коля: '1000', Вася: '500', Петя: '1200000200'};
-	alert("Зарплата Коли:"+obj['Коля']);
-	alert("Зарплата Пети:"+obj.Петя);
+	var a=Number(prompt('Введите число:'));
+	if(a!=0){
+		alert('Верно!');
+	}else{
+		alert( 'Неверно');
+	}
 }
 
 function task7(){
-	var week={1:'Понедельник',2:'Вторник',3:'Среда',4:'Четверг',5:'Пятница',6:'Суббота',7:'Воскресенье'};
-	var num = prompt('Номер недели: ');
-	alert(week[num]);
+	var a=prompt('Введите число:');
+	if(a=='test' || a=='тест'){
+		alert('Верно!');
+	}else{
+		alert( 'Неверно');
+	}
 }
 
 function task8(){
-	var obj = {1:'пн', 2:'вт', 3:'ср', 4:'чт', 5:'пт', 6:'сб', 7:'вс'};
-	var day = 3;
-	alert(obj[day]);
+	var a=prompt('Введите число:');
+	if(a==='1'){
+		alert('Верно!');
+	}else{
+		alert( 'Неверно');
+	}
 }
 
 function task9(){
-	var arr = [ [1, 2, 3], [4, 5, 6], [7,8,9] ];
-	alert(arr[1][0]);
+	var test  = true;
+	if (test) {
+		alert('Верно');
+	} else {
+		alert('Неверно');
+	}
 }
 
 function task10(){
-	var obj= {js:['jQuery', 'Angular'], php: 'hello', css: 'world'};
-	alert(obj.js[0]);
+	var test  = true;
+	if (test!=true) {
+		alert('Верно');
+	} else {
+		alert('Неверно');
+	}
 }
 
 function task11(){
-	var arr = {
-	'ru':['пн', 'вт', 'ср', 'чт', 'пт', 'сб', 'вс'],
-	'en':['mn', 'ts', 'wd', 'th', 'fr', 'st', 'sn'],
-};
-	alert(arr['ru'][0]);
-	alert(arr['en'][2]);
+	var a=Number(prompt('Введите число:'));
+	if(0<a && a<5){
+		alert('Верно');
+	} else {
+		alert('Неверно');
+	}
 }
 
 function task12(){
-	var arr = {
-	'ru':['пн', 'вт', 'ср', 'чт', 'пт', 'сб', 'вс'],
-	'en':['mn', 'ts', 'wd', 'th', 'fr', 'st', 'sn'],
-};
-	var lang = 'ru';
-	var day = 3;
-	alert(arr[lang][day]);
+	var a=Number(prompt('Введите число:'));
+	if(a==0 || a==2){
+		a+=7;
+	}else{
+		a=a/10;
+	}
+	alert(a);
 }
 
+function task13(){
+	var a=1, b=2;
+	if(a<=1 && b>=3){
+		a=a+b;
+	}else{
+		a=a-b;
+	}
+	alert(a);
+}
+
+function task14(){
+	var a=Number(prompt('Введите число a:')), b=Number(prompt('Введите число b:'));
+	if(a>2 && a<11 && b>=5  && b<14){
+		alert('Вверно');
+	}else{
+		alert('Неверно!');
+	}
+	
+}
+
+function task15(){
+	var num =Number(prompt('Введите число от 0 до 4:'));
+	switch(num){
+		case 1:
+			result = 'Зима';
+		break;
+		case 2:
+			result = 'Весна';
+		break;
+		case 3:
+			result = 'Лето';
+		break;
+		case 4:
+			result = 'Осень';
+		break;
+	}
+	alert(result);
+}
+
+function task16(){
+	var day =Number(prompt('Введите число от 0 до 31:'));
+	if(0<day && day<=10){
+		var decada=1;
+	}
+	if(10<day && day<=20){
+		var decada=2;
+	}
+	if(20<day && day<=31){
+		var decada=3;
+	}
+	alert(decada);
+}
+
+function task17(){
+	var month =Number(prompt('Введите число от 0 до 12:'));
+	if (month == 12 || month <= 2) {
+		var result = 'Зима';
+	}
+	if (month >= 3 && month <= 5) {
+		result = 'Весна';
+	}
+	if (month >= 6 && month <= 8) {
+		result = 'Лето';
+	}
+	if (month >= 9 && month <= 11) {
+		result = 'Осень';
+	}
+	alert(result);
+}
+	
+function task18(){
+	var stroka =prompt('Введите abcde');
+	s=stroka[0];
+	if(s=='a'){
+		alert('да');
+	}else{
+		alert('нет');
+	}
+}
