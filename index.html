@@ -6,42 +6,88 @@
 	<link rel="stylesheet" href="style.css">
 	<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
 </head>
-<body onload="task1(),task2(),task3(),task4(),task5()">
-	<h1>Урок 23."Задачи на продвинутую работу с событиями в JavaScript"</h1>
+<body>
+	<h1>Урок 24."Задачи на продвинутую работу с DOM на JavaScript"</h1>
 	<div class="basis">
-		<div class="task task1">
-			<span>task1</span><br>
-			<div class="task11 task1-1"></div>
-			<div class="task11 task1-2"></div>
-			<div class="task11 task1-4"></div>
-		</div>
-		<div class="task task2">
-			<span>task2</span><br>
-			<a href="#" title="1" class="task2">Текст первой ссылки</a><br>
-			<a href="#" title="" class="task2">Текст второй ссылки</a><br>
-			<a href="#" title="" class="task2">Текст третьей ссылки</a><br>
-		</div>
-		<div class="task task3">
-			<span>task3</span><br>
-			<a href="#" title="" class="task3">Текст первой ссылки</a><br>
-			<a href="#" title="" class="task3">Текст второй ссылки</a><br>
-			<a href="#" title="" class="task3">Текст третьей ссылки</a><br>
-		</div>
-		<div class="task task4">
-			<span>task4</span><br>
-			<a href="http://ya.ru" title="">Текст первой ссылки</a><br>
-			<a href="http://tut.by" title="">Текст второй ссылки</a><br>
-			<a href="http://google.com" title="">Текст третьей ссылки</a><br>
-		</div>
-		<div class="task task5"">
-			<span>task5</span><br>
-			<input type="text" value="1" class="task55">
-			<input type="text" value="2" class="task55">
-			<input type="text" value="3" class="task55">
-			<p id="test5"></p>	
-		</div>
 		
-		
+		<div class="task task1"><span class="otstyp">task1</span>
+			<p id="task1"></p>
+			<input type="button" onclick="task1()" value="нажми чтобы добавить класс">
+		</div>
+		<div class="task task2"><span class="otstyp">task2</span>
+			<p id="task2" class="www bbb"></p>
+			<button onclick="task2()">нажми чтобы удалить класс!</button>
+		</div>
+		<div class="task task3"><span class="otstyp">task3</span>
+			<p id="task3" class="www bbb"></p>
+			<button onclick="task3()"">Нажмите чтобы проверить класс www</button>
+		</div>
+		<div class="task "><span class="otstyp">task4</span>
+			<p id="task4" class="www bbb"></p>
+			<button onclick="task4()"">Нажми!</button>
+		</div>
+		<div class="task task5"><span class="otstyp">task5</span>
+			<p id="task5" class="www bbb ccc vvv"></p>
+			<button onclick="task5()">Нажми тобы узнать количество классов!</button>
+		</div>
+		<div class="task task6"><span class="otstyp">task6</span>
+
+			<p id="task6" class="www bbb ccc vvv"></p>
+			<button onclick="task6()">вывод названия классов</button>
+		</div>
+		<div class="task task7"><span class="otstyp">task7</span>
+			<p id="task7" class="www bbb ccc vvv">Hello world!</p>
+			<button onclick="task7()">изменение класса</button>
+		</div>
+		<div class="task task8"><span class="otstyp">task8</span>
+			<p id="task8" onclick="task8(this)">Элемент</p>
+		</div>
+		<div class="task task9"><span class="otstyp">task9</span>
+			<p id="task9" onclick="task9()">Элемент</p>
+		</div>
+		<div class="task task10" onclick="task10()"><span class="otstyp">task10 нажмите на окно</span>
+			<h1 class="www10">Элемент 1</h1>
+			<p class="www10">Элемент 2</p>
+			<div class="www10">Элемент 3</div>	
+		</div>
+		<div class="task task11"><span class="otstyp">task11</span></div>
+		<div class="task task12"><span class="otstyp">task12</span></div>
+		<div class="task task13"><span class="otstyp">task13</span></div>
+		<div class="task task14"><span class="otstyp">task14</span></div>
+		<div class="task task15"><span class="otstyp">task15</span>
+			<input type="text">
+			<button >Нажми на меня</button>
+			<button onclick="task15(){function task155()}">Потом на меня</button>
+		</div>
+		<div class="task task16"><span class="otstyp">task16</span></div>
+		<div class="task task17"><span class="otstyp">task17</span></div>
+		<div class="task task18"><span class="otstyp">task18</span></div>
+		<div class="task task19"><span class="otstyp">task19</span></div>
+		<div class="task task20"><span class="otstyp">task20</span></div>
+		<div class="task task21"><span class="otstyp">task21</span></div>
+		<div class="task task22"><span class="otstyp">task22</span></div>
+		<div class="task task23"><span class="otstyp">task23</span></div>
+		<div class="task task24"><span class="otstyp">task24</span></div>
+		<div class="task task25"><span class="otstyp">task25</span><BR>
+			<input type="text" id="value" value=""><BR>
+			<button onclick="task25('+')">+</button>
+			<button onclick="task25('-')">-</button>
+			<button onclick="task25('/')">/</button>
+			<button onclick="task25('*')">*</button>
+			<button onclick="task25(1)">1</button>
+			<button onclick="task25(2)">2</button>
+			<button onclick="task25(3)">3</button>
+			<button onclick="task25(4)">4</button>
+			<button onclick="task25(5)">5</button>
+			<button onclick="task25(6)">6</button>
+			<button onclick="task25(7)">7</button>
+			<button onclick="task25(8)">8</button>
+			<button onclick="task25(9)">9</button>
+			<button onclick="task25('C')">C</button>
+			<button class="value_numk" onclick="task25('=')">=</button>
+		</div>
+
+	</div>
 	
 </body>
 <script src="script.js"></script>
