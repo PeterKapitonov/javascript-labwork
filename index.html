@@ -7,51 +7,57 @@
 	<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
 </head>
 <body>
-	<h1>Урок 24."Задачи на продвинутую работу с DOM на JavaScript"</h1>
+	<h1>Урок 25."Работа с метриками на JavaScript"</h1>
 	<div class="basis">
 		
 		<div class="task task1"><span class="otstyp">task1</span>
-			<p id="task1"></p>
-			<input type="button" onclick="task1()" value="нажми чтобы добавить класс">
+			<div id="task1"> По нажатию на кнопку выведите толщину его верхней границы</div>
+
+			<input type="submit" onclick="task1()">
 		</div>
 		<div class="task task2"><span class="otstyp">task2</span>
-			<p id="task2" class="www bbb"></p>
-			<button onclick="task2()">нажми чтобы удалить класс!</button>
+			<div id="task2"> По нажатию на кнопку выведите толщину его левой границы</div>
+			<input type="submit" onclick="task2()">
 		</div>
-		<div class="task task3"><span class="otstyp">task3</span>
-			<p id="task3" class="www bbb"></p>
-			<button onclick="task3()"">Нажмите чтобы проверить класс www</button>
+		<div class="task task3"><span class="otstyp">task3.Полная ширина с учетом границы:4px и padding:2px</span>
+			<div id="task3" > </div>
+			<input type="submit" onclick="task3()">
 		</div>
-		<div class="task "><span class="otstyp">task4</span>
-			<p id="task4" class="www bbb"></p>
-			<button onclick="task4()"">Нажми!</button>
+		<div class="task "><span class="otstyp">task4.Полная высота с учетом границы:4px и padding:2px</span>
+			<div id="task4" > </div>
+			<input type="submit" onclick="task4()">
 		</div>
-		<div class="task task5"><span class="otstyp">task5</span>
-			<p id="task5" class="www bbb ccc vvv"></p>
-			<button onclick="task5()">Нажми тобы узнать количество классов!</button>
+		<div class="task task5"><span class="otstyp">task5.Полная ширина без учета границы:4px, но с padding:2px</span>
+			<div id="task5" > </div>
+			<input type="submit" onclick="task5()">
 		</div>
-		<div class="task task6"><span class="otstyp">task6</span>
-
-			<p id="task6" class="www bbb ccc vvv"></p>
-			<button onclick="task6()">вывод названия классов</button>
+		<div class="task task6"><span class="otstyp">task6.Полная высота без учета границы:4px, но c padding:2px</span>
+			<div id="task6" > </div>
+			<input type="submit" onclick="task6()">
 		</div>
 		<div class="task task7"><span class="otstyp">task7</span>
-			<p id="task7" class="www bbb ccc vvv">Hello world!</p>
-			<button onclick="task7()">изменение класса</button>
+			<div id="task7" > </div>
+			<input type="submit" onclick="task7()">
 		</div>
 		<div class="task task8"><span class="otstyp">task8</span>
-			<p id="task8" onclick="task8(this)">Элемент</p>
+			<div id="task8" ><div id="task8-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque eius libero sint, expedita corporis aliquid voluptatem. Magnam maiores ullam possimus nemo, minima, non impedit! Dolore voluptatem officia, accusantium nobis dicta optio unde repellendus omnis consectetur tenetur voluptate cupiditate explicabo facilis.</div></div>
+			<input type="submit" onclick="task8()">
 		</div>
 		<div class="task task9"><span class="otstyp">task9</span>
-			<p id="task9" onclick="task9()">Элемент</p>
+			<div id="task9" ><div id="task9-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque eius libero sint, expedita corporis aliquid voluptatem. Magnam maiores ullam possimus nemo, minima, non impedit! Dolore voluptatem officia, accusantium nobis dicta optio unde repellendus omnis consectetur tenetur voluptate cupiditate explicabo facilis.</div></div>
+			<input type="submit" onclick="task9()">
 		</div>
-		<div class="task task10" onclick="task10()"><span class="otstyp">task10 нажмите на окно</span>
-			<h1 class="www10">Элемент 1</h1>
-			<p class="www10">Элемент 2</p>
-			<div class="www10">Элемент 3</div>	
+		<div class="task task10" onclick="task10()"><span class="otstyp">task10. По нажатию на кнопку прокрутится  до позиции 100px сверху.</span>
+			<div id="task10" ><div id="task10-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque eius libero sint, expedita corporis aliquid voluptatem. Magnam maiores ullam possimus nemo, minima, non impedit! Dolore voluptatem officia, accusantium nobis dicta optio unde repellendus omnis consectetur tenetur voluptate cupiditate explicabo facilis.</div></div>
+			<input type="submit" onclick="task10()">
 		</div>
-		<div class="task task11"><span class="otstyp">task11</span></div>
-		<div class="task task12"><span class="otstyp">task12</span></div>
+		<div class="task task11"><span class="otstyp">task11. По нажатию на кнопку прокрутится  до позиции 100px слева.</span>
+			<div id="task11" ><div id="task11-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque eius libero sint, expedita corporis aliquid voluptatem. Magnam maiores ullam possimus nemo, minima, non impedit! Dolore voluptatem officia, accusantium nobis dicta optio unde repellendus omnis consectetur tenetur voluptate cupiditate explicabo facilis.</div></div>
+			<input type="submit" onclick="task11()">
+		</div>
+		<div class="task task12"><span class="otstyp">task12.По нажатию на кнопку прокрутите страницу до самого низа.</span><br>
+			<input type="submit" onclick="task12()">
+		</div>
 		<div class="task task13"><span class="otstyp">task13</span></div>
 		<div class="task task14"><span class="otstyp">task14</span></div>
 		<div class="task task15"><span class="otstyp">task15</span>
@@ -62,30 +68,8 @@
 		<div class="task task16"><span class="otstyp">task16</span></div>
 		<div class="task task17"><span class="otstyp">task17</span></div>
 		<div class="task task18"><span class="otstyp">task18</span></div>
-		<div class="task task19"><span class="otstyp">task19</span></div>
-		<div class="task task20"><span class="otstyp">task20</span></div>
-		<div class="task task21"><span class="otstyp">task21</span></div>
-		<div class="task task22"><span class="otstyp">task22</span></div>
-		<div class="task task23"><span class="otstyp">task23</span></div>
-		<div class="task task24"><span class="otstyp">task24</span></div>
-		<div class="task task25"><span class="otstyp">task25</span><BR>
-			<input type="text" id="value" value=""><BR>
-			<button onclick="task25('+')">+</button>
-			<button onclick="task25('-')">-</button>
-			<button onclick="task25('/')">/</button>
-			<button onclick="task25('*')">*</button>
-			<button onclick="task25(1)">1</button>
-			<button onclick="task25(2)">2</button>
-			<button onclick="task25(3)">3</button>
-			<button onclick="task25(4)">4</button>
-			<button onclick="task25(5)">5</button>
-			<button onclick="task25(6)">6</button>
-			<button onclick="task25(7)">7</button>
-			<button onclick="task25(8)">8</button>
-			<button onclick="task25(9)">9</button>
-			<button onclick="task25('C')">C</button>
-			<button class="value_numk" onclick="task25('=')">=</button>
-		</div>
+		
+		
 
 	</div>
 	

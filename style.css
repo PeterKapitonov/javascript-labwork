@@ -38,19 +38,102 @@ input{
   padding:10pt;
 }
 
-.task25>input{
-  width: 500px;
-  font-size: 30px;
+#task1{
+  border-top:4px solid #fff;
+   border-bottom:4px solid #fff;
 }
-.task25>button{
-  width: 200px;
+#task2{
+  border-left:4px solid #fff;
+   border-right:6px solid #fff;
 }
-.value_numk{
-  width: 500px;
+#task3{
+  width:40px;
+  height: 12px;
+  border:4px solid #fff;
+  padding:2px;
+  margin:20px;
 }
-
-.task4{
-  width: 250px;
-  height: 50px;
-  border: 2px solid #fff;
+#task4{
+  width:40px;
+  height: 12px;
+  border:4px solid #fff;
+  padding:2px;
+  margin:20px;
+}
+#task5{
+  width:40px;
+  height: 12px;
+  border:4px solid #fff;
+  padding:2px;
+  margin:20px;
+}
+#task6{
+  width:40px;
+  height: 12px;
+  border:4px solid #fff;
+  padding:2px;
+  margin:20px;
+}
+#task7{
+  width:40px;
+  height: 12px;
+  border:4px solid #fff;
+  padding:2px;
+  margin:20px;
+}
+#task8{
+  width:400px;
+  height: 122px;
+  border:4px solid #fff;
+  padding:2px;
+  margin:20px;
+  overflow: auto;
+}
+#task8-1{
+  width:500px;
+  height: 142px;
+  padding:2px;
+  margin:20px;
+}
+#task9{
+  width:400px;
+  height: 122px;
+  border:4px solid #fff;
+  padding:2px;
+  margin:20px;
+  overflow: auto;
+}
+#task9-1{
+  width:500px;
+  height: 142px;
+  padding:2px;
+  margin:20px;
+}
+#task10{
+  width:400px;
+  height: 122px;
+  border:4px solid #fff;
+  padding:2px;
+  margin:20px;
+  overflow: auto;
+}
+#task10-1{
+  width:500px;
+  height: 142px;
+  padding:2px;
+  margin:20px;
+}
+#task11{
+  width:400px;
+  height: 122px;
+  border:4px solid #fff;
+  padding:2px;
+  margin:20px;
+  overflow: auto;
+}
+#task11-1{
+  width:500px;
+  height: 142px;
+  padding:2px;
+  margin:20px;
 }
