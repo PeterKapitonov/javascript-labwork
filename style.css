@@ -13,11 +13,7 @@ h1 {
   font-weight: normal; /* Нормальное начертание текста  */
 
 }
-input{
-	height: 50px; /* Высота блока */
-    width: 150px; /* Ширина блока */
-    margin-bottom: 10px;
-}
+
 .basis{
   border: 2px solid #fff;
   width: 100%;
@@ -38,49 +34,15 @@ input{
   padding:10pt;
 }
 
-#task1{
-  border:1px solid #fff;
-   width: 600px;
-   height: 250px;
+.task1{
+  height: 450px;
 }
-#task1-1{
-  border:1px solid #fff;
-   width: 600px;
-   height: 250px;
-}
-#task2{
-   width: 100px;
-    height: 100px;
-    border: 1px solid red;
-    position: absolute;
-    top: 30px;
-    left: 0px;
-}
-#task3{
-   width: 100px;
-    height: 100px;
-    border: 1px solid red;
-    position: absolute;
-    top: 30px;
-    left: 0px;
-}
-.task6{
+th,td{
+  width:150px;
   text-align: center;
 }
-#task6{
-  display: block;
-    margin-top: 60px;
-    margin: 0 auto;
-    width: 200px;
-    height: 200px;
-    border: 1px solid red;
-}
-#task7{
-  display: block;
-    margin-top: 60px;
-    margin: 0 auto;
-    width: 200px;
-    height: 200px;
-    border: 1px solid red;
-    font-size: 50px;
+#sur-name{
+  height: 30px;
+  width: 400px;
+  font-size: 20px;
 }

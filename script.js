@@ -1,90 +1,53 @@
 
 function task1(){
-	var elem = document.getElementById('task1');
+	var ul = document.getElementsByTagName('ul');
+	ul[0].addEventListener('click', addSign);
+	ul[1].addEventListener('click', addSign);
+	function addSign() {
+		event.target.innerHTML = event.target.innerHTML + '!';
+	}
 
-	elem.onmousemove = func;
+	var button = document.getElementById('task111');
+	button.addEventListener('click', task1_0);
 
-	function func(event) {
-		this.innerHTML = 'кординаты всего окна:<br>'+ event.clientX + ':' + event.clientY;
+	function task1_0() {
+		var li = document.createElement('li');
+		li.innerHTML = 'пункт';
+		ul[0].appendChild(li);
+	}
+
+	var button1 = document.getElementById('task112');
+	button1.addEventListener('click', task1_1);
+
+	function task1_1() {
+		var li = document.createElement('li');
+		li.innerHTML = 'пункт';
+		ul[1].appendChild(li);
 	}
 	
 }
-function task1_1(){
-	window.addEventListener('mousemove', go);
-	function go(event) {
-		document.getElementById('task1-1').innerHTML = 'X:'+event.clientX+' Y:'+event.clientY;
-	}	
-}
 
 function task2(){
-	window.addEventListener('click', go);
-	function go(event) {
-		var elem = document.getElementById('task2');
-		elem.style.left = event.clientX+'px';
-		elem.style.top = event.clientY+'px';
-	}
-}
-
-function task3(){
-	window.addEventListener('click', go);
-	function go(event) {
-		var elem = document.getElementById('task3');
-		elem.style.left = (event.clientX - parseInt(window.getComputedStyle(elem, "").width) / 2)+'px';
-		elem.style.top = (event.clientY  - parseInt(window.getComputedStyle(elem, "").height) / 2)+'px';
-	}
-
-}
-
-function nachalo(){
-	window.scrollTo(0,0);
-}
-
-
-function task4(){
-	document.getElementById('task4').innerHTML = 'keyCode = '+ event.keyCode;
-}
-
-function task5(){
-	document.getElementById('task5').innerHTML =' Название кнопки: '+String.fromCharCode(event.keyCode);
-}
-
-function task6(){
-	var div = document.getElementById('task6');
-	if(event.ctrlKey && event.shiftKey){
-		div.style.background = "orange";
-	}else{
-		if(event.ctrlKey){
-			div.style.background = "red";
-		} 
-		if(event.shiftKey){
-			div.style.background = "blue";
-		} 
-		if(event.altKey){
-			div.style.background = "green";
-		} 
-	}
-}
-
-function task7(){
-	var div = document.getElementById('task7');
-		if(event.ctrlKey){
-			div.innerHTML = "1";
-		} 
-		if(event.shiftKey){
-			div.innerHTML = "2";
-		} 
-		if(event.altKey){
-			div.innerHTML = "3";
-		} 
-}
-function task8(event){
-	var text = document.getElementById('task8-text');
-	var elem_p = document.getElementById('task8');
-	var text_value=text.value;
+	var table=document.getElementById('onclock');//таблица
+	var addition=document.getElementById('sur-name');//input с именем и фамилией
 	if(event.keyCode==13){
-		elem_p.innerHTML=text_value;
-		text.value=' ';
+		var mass=addition.value.split(' ');
+		if(mass.length==2){
+			if(isNaN(mass[0]) && isNaN(mass[1]) ){
+				table.innerHTML=table.innerHTML+'<tr><td id="surname">'+mass[0]+'</td><td id="name">'+mass[1]+'</td></tr>';
+			}else{
+				alert('Введите правлиьно своё имя');
+			}
+
+				
+		}else{
+			alert('Введите правлиьно своё имя');
+		}
+	}
+	table.addEventListener('click',addSign);
+	function addSign(){
+		var art=prompt('Введите изменения:');
+		event.target.innerHTML= String(art);
 	}
 }
-
 
