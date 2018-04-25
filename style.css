@@ -39,17 +39,48 @@ input{
 }
 
 #task1{
-  border-top:4px solid #fff;
-   border-bottom:4px solid #fff;
+  border:1px solid #fff;
+   width: 600px;
+   height: 250px;
+}
+#task1-1{
+  border:1px solid #fff;
+   width: 600px;
+   height: 250px;
 }
 #task2{
-  border-left:4px solid #fff;
-   border-right:6px solid #fff;
+   width: 100px;
+    height: 100px;
+    border: 1px solid red;
+    position: absolute;
+    top: 30px;
+    left: 0px;
 }
 #task3{
-  width:40px;
-  height: 12px;
-  border:4px solid #fff;
-  padding:2px;
-  margin:20px;
+   width: 100px;
+    height: 100px;
+    border: 1px solid red;
+    position: absolute;
+    top: 30px;
+    left: 0px;
+}
+.task6{
+  text-align: center;
+}
+#task6{
+  display: block;
+    margin-top: 60px;
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    border: 1px solid red;
+}
+#task7{
+  display: block;
+    margin-top: 60px;
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    border: 1px solid red;
+    font-size: 50px;
 }

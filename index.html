@@ -6,28 +6,43 @@
 	<link rel="stylesheet" href="style.css">
 	<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
 </head>
-<body>
-	<h1>Урок 25."Работа с метриками на JavaScript"</h1>
+<body onload="task1(),task1_1(),task2(),task3()">
+	<h1>Урок 27."Задачи на основы работы с объектом Event на JavaScript"</h1>
 	<div class="basis">
 		
 		<div class="task task1"><span class="otstyp">task1</span>
-			<div id="task1"> По нажатию на кнопку выводиться высота окна браузера</div>
+			<div id="task1"></div>
+		</div>
+		<div class="task task2"><span class="otstyp">task1.1</span>
+			<div id="task1-1"></div>
+		</div>
+		<div class="task task2"><span class="otstyp">task2.Прокрутите в начало экрана и нажмите на кнопку чтобы узнать результат</span>
+			<div id="task2"></div>
+			<input type="submit" onclick="nachalo()" value="начало">
+		</div>
+		<div class="task task3"><span class="otstyp">task3.Прокрутите в начало экрана и нажмите на кнопку чтобы узнать результат</span>
+			<div id="task3"></div>
+			<input type="submit" onclick="nachalo()" value="начало">
+		</div>
+		<div class="task "><span class="otstyp">task4.Наведите на форму и нажмите на кнопку клавиатуры</span>
+			<input type="text" onkeypress="task4()">
+			<div id="task4" > </div>
 
-			<input type="submit" onclick="task1()" value="Нажмите">
 		</div>
-		<div class="task task2"><span class="otstyp">task2</span>
-			<div id="task2"> По нажатию окно прокрутиться до самого низу</div>
+		<div class="task "><span class="otstyp">task5.Наведите на форму и нажмите на кнопку клавиатуры</span>
+			<input type="text" onkeypress="task5()">
+			<div id="task5" > </div>
 
-			<input type="submit" onclick="task2()" value="Нажмите">
 		</div>
-		<div class="task task3"><span class="otstyp">task3.Текущая прокрутка сверху</span>
-				<input type="submit" onclick="task3()" value="Нажмите">
+		<div class="task task6"><span class="otstyp">task6.Нажмите на div одновременно нажимая на ctrl</span>
+			<div id="task6" onclick="task6()"> </div>
 		</div>
-		<div class="task "><span class="otstyp">task4</span>
-			
+		<div class="task task7"><span class="otstyp">task7.Нажмите на div одновременно нажимая на ctrl</span>
+			<div id="task7" onclick="task7()"> </div>
 		</div>
-		<div class="task task5"><span class="otstyp">task5</span>
-			
+		<div class="task task8"><span class="otstyp">task8.Текст вводиться и нажимается enter и текст выводиться на p заодно удаляясь с input</span><br>
+			<input type="text" id="task8-text" value="" onkeypress="task8(event)" style="font-size: 18px"><br>
+			<p id="task8"> </p>
 		</div>
 		
 
