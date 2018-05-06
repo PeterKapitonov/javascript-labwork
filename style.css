@@ -1,92 +1,72 @@
 body{
-	font-family: Arial, Verdana,  sans-serif; /* Семейство шрифтов */
-  font-size: 11pt; /* Размер основного шрифта в пунктах  */
-  background-color: #f0f0f0; /* Цвет фона веб-страницы */
-  color: #333; /* Цвет основного текста */ 
-  font-family: 'Lora', serif;
-}
-h1 {
-  text-align: center;
-  color: #a52a2a; /* Цвет заголовка */
-  font-size: 24pt; /* Размер шрифта в пунктах */
-  font-family: Georgia, Times, serif; /* Семейство шрифтов */
-  font-weight: normal; /* Нормальное начертание текста  */
 
 }
-input{
-	height: 30px; /* Высота блока */
-    width: 100px; /* Ширина блока */
-    margin-bottom: 10px;
+.calculator{
+	width:300px;
+	height: 400px;
+	border:1px solid #000;
 }
-.basis{
-  border: 2px solid #fff;
-  width: 100%;
- 
+.window{
+	width:270px;
+	height: 50px;
+	border:1px dotted #000;
+	margin: 15px;
+	margin-top: 20px;
 }
-.task{
-  font-size: 20px;
-  margin:50px auto;
-  border: 2px dotted #000;
-  width: 600px;
-  height: 300px;
-  padding: 20px;
-  color:#240a41;
-  background: #20b99b;
-
+#tor-c{
+	margin: 5PX;
+	width:25px;
+	height: 25px;
 }
-.otstyp{
-  padding:10pt;
+#window{
+	width: 170px;
+	height: 20px;
+	font-size: 20px;
+	margin: 6PX;
+	margin-top: 10px;
 }
-
-#num4{
-  width: 200px;
-  height: 30px;
+.symbol{
+	width:250px;
+	height: 260px;
+	border:1px dotted #000;
+	margin: 25px;
 }
-.task5 input{
-  width: 150px;
+.symbol div{         /*кнопки */
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	font-size: 20px;
+	border:1px solid #000;
+	margin-left: 13PX;
+	margin-top: 11PX;
+	text-align: center;
+	line-height: 2em;
 }
-#task6{
-  width: 450px;
+.symbol div:hover{
+	background: blue;
+	color:greenyellow;
+	cursor: pointer;
+	text-align: center;
+	transition: background .1s,
+			color .1s;
 }
-#task7{
-  width: 450px;
-  height: 220px;
+.window div{ /*кнопка удаления последнего символа*/
+	
+	width: 30px;
+	height: 30px;
+	font-size: 20px;
+	border:1px solid #000;
+	text-align: center;
+	line-height: 2em;
+	float:right;
+	margin-top: 5px;
+	margin-right:5px;
 }
-#task10{ 
-  width: 250px;
-}
-
-#task11{ 
-  width: 250px;
-}
-
-#task12{ 
-  width: 250px;
-}
-
-#task14{ 
-  width: 140px;
-}
-
-.task15{
-  height: 340px;
-}
-
-#task15{
-  width: 440px;
-}
-
-.task19 img{
-  width: 150px;
-  height: 70px;
-}
-
-.task20 img{
-  width: 150px;
-  height: 70px;
-}
-
-.task21 img{
-  width: 150px;
-  height: 70px;
+.window div:hover{
+	background: blue;
+	color:greenyellow;
+	cursor: pointer;
+	text-align: center;
+	transition: background .1s,
+			color .1s;
 }
