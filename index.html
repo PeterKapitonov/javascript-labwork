@@ -2,50 +2,276 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>lesson 37</title>
 	<link rel="stylesheet" href="style.css">
-	<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
 </head>
 <body>
-	<h1>Урок 35."Задачи на нововведения в ES6"</h1>
-	<div class="basis">
-		<div class="task task1">
-			<span>task1</span><br>
-			<button onclick="task1()">Нажми!</button><br>
-
-		</div>
-		<div class="task task2">
-			<span>task2.последний элемент и предпоследний элемент массива.</span><br>
-			<button onclick="task2()">Нажми!</button><br>
-		</div>
-		<div class="task task3">
-			<span>task3.Второй элемент массива</span><br>
-			<button onclick="task3()">Нажми!</button><br>
-		</div>
-		<div class="task task4">
-			<span>task4.Если в массиве нет третьего элемента - запишите в переменную elem3 значение 'eee', а если нет второго - в переменную elem2 запишите значение 'bbb'.</span><br>
-			<button onclick="task4()">Нажми!</button><br>
-		</div>
-		<div class="task task5">
-			<span>task5.Преоброзование имени ключа в переменную</span><br>
-			<button onclick="task5()">Нажми!</button><br>
-		</div>
-		<div class="task task6">
-			<span>task6.Преоброзование имени ключа в переменную, если нет ключа задать конкретное значение</span><br>
-			<button onclick="task6()">Нажми!</button><br>	
-		</div>
-		<div class="task task7">
-			<span>task7.Вывод элементов массива последовательно на экран.</span><br>
-			<button onclick="task7()">Нажми!</button><br>	
-		</div>
-		<div class="task task8">
-			<span>task8.Вывод элементов массива последовательно на экран в обратном порядке.</span><br>
-			<button onclick="task8()">Нажми!</button><br>   	
-		</div>
-
-		
-
-		
+	
+	<div class="task" id="task1">
+		<p>task1 Всем h3 поставьте текст '!!!'</p>
+		<h2>hello</h2>
+		<h2>hello</h2>
+		<h2>hello</h2>
+		<h2>hello</h2>
+		<h2>hello</h2>
+		 <br>
+		<button id="button1" onclick="task1()">нажми</button>
+	</div>
+	<div class="task" id="task2">
+		<p>task2</p>
+		<h3>hello world!</h3>
+		<h3>hello world!</h3>
+		<h3>hello world!</h3>
+		<h3>hello world!</h3>
+		<h3>hello world!</h3>
+		<h3>hello world!</h3>
+		<button id="button2" onclick="task2()">нажми</button>
+	</div>
+	<div class="task" id="task3">
+		<p>task3</p>
+		<h2>hello</h2>
+		<h2>hello</h2>
+		<h2>hello</h2>
+		<h2>hello</h2>
+		<h2>hello</h2><br>
+		<button id="button3" onclick="task3()">нажми</button>
+	</div>
+	<div class="task" id="task4">
+		<p>task4</p>
+		<div class="test4">test</div>
+		<div class="test4">test</div>
+		<div class="test4">test</div>
+		<div class="test4">test</div>
+		<div class="test4">test</div>
+		<button id="button4" onclick="task4()">нажми</button>
+	</div>
+	<div class="task" id="task5">
+		<p>task5</p>
+		<h2 class="test5">test</h2>
+		<h2 class="test5">test</h2>
+		<h2 class="test5">test</h2>
+		<h2 class="test5">test</h2>
+		<h2 class="test5">test</h2><br>
+		<button id="button5" onclick="task5()">нажми</button>
+	</div>
+	<div class="task" id="task6">
+		<p>task6</p>
+		<h4>
+			<h3>hello</h3>
+		</h4>
+		<h3>hello
+			<h3>hello</h3>
+		</h3>
+		<h3>
+			<h3>hello</h3>
+		</h3>
+		<h4>
+			<h3>hello</h3>
+		</h4>
+		<h3>
+			<h3>hello</h3>
+		</h3>
+		<h3>
+			<h3>hello</h3>
+		</h3>
+		<button id="button6" onclick="task6()">нажми</button>
+	</div>
+	<div class="task" id="task7">
+		<p>task7</p>
+		<li>
+			<li class="www">test</li>
+		</li>
+		<li>
+			<li class="www">test</li>
+		</li>
+		<li>
+			<li class="www">test</li>
+		</li>
+		<li>
+			<li class="www">test</li>
+		</li>
+		<li>
+			<li class="www">test</li>
+		</li>
+		<button id="button7" onclick="task7()">нажми</button>
+	</div>
+	<div class="task" id="task8">
+		<p>task8</p>
+		<h2><i>hello</i></h2>
+		<h2><i>hello</i></h2>
+		<h2><li><i>hello</i></li></h2>
+		<h2><i>hello</i></h2>
+		<h2><i>hello</i></h2>
+		<h2><a href="">google</a></h2>
+		<h2><a href="">google</a></h2>
+		<h2><a href="">google</a></h2>
+		<button id="button8" onclick="task8()">нажми</button>
+		<button id="button8" onclick="task8_1()">нажми</button>
+		<button id="button8" onclick="task8_2()">вернуть</button>
+	</div>
+	<div class="task" id="task9">
+		<p>task9</p>
+		<h2><i>hello</i></h2>
+		<h2><i>hello</i></h2>
+		<h2><li><i>hello</i></li></h2>
+		<h2><i>hello</i></h2>
+		<h2><i>hello</i></h2>
+		<button id="button9" onclick="task9()">нажми</button>
+	</div>
+	<div class="task" id="task10">
+		<p>task10.     Работа с :header</p>
+		<h1>tast</h1>
+		<h1>tast</h1>
+		<h1>tast</h1>
+		<h1>tast</h1>
+		<h1>tast</h1><br>
+		<h2>test</h2>
+		<h2>test</h2>
+		<h2>test</h2>
+		<h2>test</h2>
+		<h2>test</h2>
+		<li>tast</li>
+		<li>tast</li>
+		<li>tast</li>
+		<li>tast</li>
+		<li>tast</li>
+		<button id="button10" onclick="task10()">нажми</button>
+	</div>
+	<div class="task" id="task11">
+		<p>task11. h2 НЕ с классом test</p>
+		<h2 class="test">hello</h2>
+		<h2>hello</h2>
+		<h2 class="test">hello</h2>
+		<h2>hello</h2>
+		<h2 class="test">hello</h2>
+		<h2>hello</h2>
+		<h2 class="test">hello</h2>
+		<h2>hello</h2>
+		<h2 class="test">hello</h2>
+		<h2>hello</h2>
+		<button id="button11" onclick="task11()">нажми</button>
+	</div>
+	<div class="task" id="task12">
+		<p>task12. Все заголовки без класса test</p>
+		<h1 class="test">test</h1>
+		<h1 class="test">test</h1>
+		<h1 class="test">test</h1>
+		<h1 class="test">test</h1>
+		<h1 class="test">test</h1>
+		<h2>test</h2>
+		<h2>test</h2>
+		<h2>test</h2>
+		<h2>test</h2>
+		<h2>test</h2>
+		<h3>test</h3>
+		<button id="button12" onclick="task12()">нажми</button>
+	</div>
+	<div class="task" id="task13">
+		<p>task13. Все заголовки, которые следуют за заголовками</p>
+		<h3>test
+			<h2>test</h2>
+		</h3>
+		<h3>test
+			<h2>test</h2>
+		</h3>
+		<h3>test
+			<h2>test</h2>
+		</h3>
+		<h3>test
+			<h2>test</h2>
+		</h3>
+		<h3>test
+			<h2>test</h2>
+		</h3>
+		<button id="button13" onclick="task13()">нажми</button>
+	</div>
+	<div class="task" id="task14">
+		<p>task14. Все заголовки с классом test, которые следуют сразу за заголовками с классом test</p>
+		<h3 class="test">test
+			<h2 class="test">test</h2>
+		</h3>
+		<h3>test
+			<h2>test</h2>
+		</h3>
+		<h3 class="test">test
+			<h2 class="test">test</h2>
+		</h3>
+		<h3>test
+			<h2>test</h2>
+		</h3>
+		<h3>test
+			<h2>test</h2>
+		</h3>
+		<button id="button14" onclick="task14()">нажми</button>
+	</div>
+	<div class="task" id="task15">
+		<p>task15 Все пустые элементы</p>
+		<div>hello</div>
+		<div>hello</div>
+		<div></div>
+		<div>hello</div>
+		<div></div>
+		<button id="button15" onclick="task15()">нажми</button>
+	</div>
+	<div class="task" id="task16">
+		<p>task16 Первый абзац p:first</p>
+		<p>hello</p>
+		<p>hello</p>
+		<p>hello</p>
+		<p>hello</p>
+		<p>hello</p>
+		<button id="button16" onclick="task16()">нажми</button>
+	</div>
+	<div class="task" id="task17">
+		<p>task17 Последний абзац :last</p>
+		<p>hello</p>
+		<p>hello</p>
+		<p>hello</p>
+		<p>hello</p>
+		<p>hello</p>
+		<button id="button17" onclick="task17()">нажми</button>
+	</div>
+	<div class="task" id="task18">
+		<p>task18 Все li, которые содержат текст 'пункт'.</p>
+		<li>Пункт</li>
+		<li>Пункт</li>
+		<li>Пункт</li>
+		<li>Пункт</li>
+		<li>test</li>
+		<li>test</li>
+		<li>test</li>
+		<button id="button18" onclick="task18()">нажми</button>
+	</div>
+	<div class="task" id="task19">
+		<p>task19 Все h2, внутри которых есть тег i.</p>
+		<h2>test<i>test</i></h2>
+		<h2>test<i>test</i></h2>
+		<h2>test<i>test</i></h2>
+		<h2>test<i>test</i></h2>
+		<h2>test<i>test</i></h2>
+		<h2>test</h2>
+		<h2>test</h2>
+		<h2>test</h2>
+		<h2>test</h2>
+		<h2>test</h2>
+		<button id="button19" onclick="task19()">нажми</button>
+	</div>
+	<div class="task" id="task20">
+		<p>task20 Все h2, которые непосредственно содержат i</p>
+		<h2>test<i>test</i></h2>
+		<h2>test<i>test</i></h2>
+		<h2>test<i>test</i></h2>
+		<h2>test<i>test</i></h2>
+		<h2>test<i>test</i></h2>
+		<h2>test</h2>
+		<h2>test</h2>
+		<h2>test</h2>
+		<h2>test</h2>
+		<h2>test</h2>
+		<button id="button20" onclick="task20()">нажми</button>
+	</div>
+	
 </body>
-<script src="script.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"> </script>
+	<script src="script.js"></script>
 </html>

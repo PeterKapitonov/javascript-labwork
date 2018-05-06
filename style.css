@@ -1,40 +1,67 @@
 body{
-	font-family: Arial, Verdana,  sans-serif; /* Семейство шрифтов */
-  font-size: 11pt; /* Размер основного шрифта в пунктах  */
-  background-color: #f0f0f0; /* Цвет фона веб-страницы */
-  color: #333; /* Цвет основного текста */ 
-  font-family: 'Lora', serif;
-}
-h1 {
-  text-align: center;
-  color: #a52a2a; /* Цвет заголовка */
-  font-size: 24pt; /* Размер шрифта в пунктах */
-  font-family: Georgia, Times, serif; /* Семейство шрифтов */
-  font-weight: normal; /* Нормальное начертание текста  */
-
-}
-input{
-	height: 50px; /* Высота блока */
-    width: 150px; /* Ширина блока */
-    margin-bottom: 10px;
-}
-.basis{
-  border: 2px solid #fff;
-  width: 100%;
- 
+	display:block;
 }
 .task{
-  font-size: 20px;
-  margin:50px auto;
-  border: 2px dotted #000;
-  width: 600px;
-  height: 300px;
-  padding: 20px;
-  color:#e0f06e;
-  background: #278cdb;
-
+	margin:auto;
+	margin-top:10px;
+	width:600px;
+	height: 200px;
+	border: 1px solid #000;
 }
-.otstyp{
-  padding:10pt;
+.task p{
+	position: relative;
+	left:-45px;
 }
 
+h1{
+	display: inline-block;
+}
+h2{
+	display: inline-block;
+}
+h3{
+	display: inline-block;
+}
+h4{
+	display: inline-block;
+}
+
+#task7{
+	height: 300px;
+}
+#task10{
+	height: 330px;
+}
+
+#task15 div{
+	display: inline-block;
+	width:30px;
+	height: 30px;
+	border:1px solid blue;
+	padding-top:10px; 
+}
+
+#task16 p{
+	position: relative;
+	left:5px;
+
+}
+#task16{
+	
+	height: 320px;
+}
+
+#task17 p{
+	position: relative;
+	left:5px;
+
+}
+#task17{
+	
+	height: 320px;
+}
+
+#task18{
+	
+	height: 270px;
+}
