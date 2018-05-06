@@ -2,46 +2,71 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Календарь</title>
+	<title>Document</title>
 	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
 </head>
 <body>
-	<table id="tableSort">
-		<thead>
-			<tr>
-				<th>№</th>
-				<th>Фамилия</th>
-				<th>Имя</th>
-				<th>Возраст</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td>2</td>
-				<td>Петров</td>
-				<td>Петр</td>
-				<td>24</td>
-			</tr>
-			<tr>
-				<td>1</td>
-				<td>Иванов</td>
-				<td>Иван</td>
-				<td>32</td>
-			</tr>
-			<tr>
-				<td>3</td>
-				<td>Абрамов</td>
-				<td>Абрам</td>
-				<td>34</td>
-			</tr>
-			<tr>
-				<td>4</td>
-				<td>Дубинин</td>
-				<td>Абрам</td>
-				<td>54</td>
-			</tr>
-		<tbody>
-	</table>
+	<h1>Урок 32."Задачи на продвинутую работу с функциями JavaScript"</h1>
+	<div class="basis">
+		<div class="task task1">
+			<span>task1.Если переменная a больше нуля - то в ggg запишем функцию, которая выводит один !, иначе запишем функцию, которая выводит два !</span><br>
+			<button onclick="task1()">Нажми!</button><br>
+
+		</div>
+		<div class="task task2">
+			<span>task2.Функция ggg принимает 2 параметра: число и анонимную функцию, которая возводит число в квадрат.</span><br>
+			<button onclick="task2()">Нажми!</button><br>
+		</div>
+		<div class="task task3">
+			<span>task3.Функция ggg принимает 2 параметра: анонимную функцию, которая возвращает 3 и анонимную функцию, которая возвращает 4.</span><br>
+			<button onclick="task3()">Нажми!</button><br>
+		</div>
+		<div class="task task4">
+			<span>task4.Дана функция ggg. Она требует первым параметром число, вторым функцию, которая возводит в квадрат, а третьим параметром функцию, которая возводит в куб. Эти функции есть как Function Declaration - kvadrat, kub. Пусть функция ggg вернет сумму квадрата и куба числа.</span><br>
+			<button onclick="task4()">Нажми!</button><br>
+		</div>
+		<div class="task task5">
+			<span>task5.Дана функция ggg. Она требует первым параметром число, вторым функцию, которая возводит в квадрат, а третьим параметром функцию, которая возводит в куб. Эти функции есть как Function Declaration - kvadrat, kub. Пусть функция ggg вернет сумму квадрата и куба числа.</span><br>
+			<button onclick="task5()">Нажми!</button><br>
+		</div>
+		<div class="task task6">
+			<span>task6.Функция each, которая первым параметром принимает массив, а вторым - массив функций, которые по очереди применятся к каждому элементу массива: к первому элементу массива - первая функция, ко второму - вторая и так далее пока функции в массиве не закончатся, после этого возьмется первая функция, вторая и так далее по кругу.</span><br>
+			<button onclick="task6()">Нажми!</button><br>	
+		</div>
+		<div class="task task7"><span class="otstyp">task7</span><br>
+			<span>task7.Количество вызовов функции.</span><br>
+			<button onclick="task7()">Нажми!</button><br>	
+		</div>
+		<div class="task task8">
+			<span>task8.Количество нажатий на кнопку.</span><br>
+			<button class="button8">0</button>
+			<button class="button8">0</button>
+			<button class="button8">0</button>   	
+		</div>
+
+		<div class="task task9">
+			<span>task9.Нажмите на абзац несколько раз.</span><br>
+			<p>текст1</p>
+			   	<p>текст2</p>
+			   	<p>текст3</p>
+			   	<p>текст4</p>
+			   	<p>текст5</p>   	
+		</div>
+
+		<div class="task task10">
+			<span>task10.</span><br>
+			<button class="button10">Фибоначчи</button><span></span>
+			<button class="button10">Фибоначчи</button><span></span>
+			<button class="button10">Фибоначчи</button><span></span>       	
+		</div>
+
+		<div class="task task12">
+			<span>task12.Cлучайные числа от 1 до 100, но так, чтобы они не повторялись</span><br>
+			<button class="button12">Нажми</button>
+			<p class="button12-1"></p>             	
+		</div>
+		
 </body>
-	<script src="script.js"></script>
+<script src="script.js"></script>
 </html>
