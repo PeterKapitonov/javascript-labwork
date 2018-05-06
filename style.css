@@ -1,33 +1,22 @@
-#accordion {
-	margin: 10px 15%;
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	margin: 0 auto;
 }
-#accordion > h3 {
-	color: blue;
+td, th {
+	border: 1px solid #000;
+	padding: 10px;
+}
+th:after {
+	padding-left: 5px;
+}
+th.darr:after {
+	content: '\2193';
+}
+th.uarr:after {
+	content: '\2191';
+}
+thead {
+	background: #eee;
 	cursor: pointer;
-	margin: 5px 0;
-	padding: .5em .5em .5em .7em;
-	border: 1px solid #ddd;
-	border-radius: 5px;
-	border: 1px solid #c5c5c5;
-	background: #f6f6f6;
-	font-weight: normal;
-	color: #454545;
-}
-#accordion > h3.select {
-	border: 1px solid #003eff;
-	background: #007fff;
-	font-weight: normal;
-	color: #ffffff;
-}
-#accordion > div {
-	height: 0;
-	overflow: hidden;
-	color: #333;
-	padding-left: 15px;
-	padding-right: 15px;
-	transition: height .5s;
-}
-.tabs__text {
-	font: 12px Arial;
-	text-align: justify;
-}
+} 
