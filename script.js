@@ -1,41 +1,58 @@
-var countries = ["Австралия", "Австрия", "Азербайджан", "Албания", "Алжир", "Ангола", "Андорра", "Антигуа и Барбуда", "Антильские острова", "Аргентина", "Армения", "Афганистан", "Багамские острова", "Бангладеш", "Барбадос", "Бахрейн", "Белиз", "Белоруссия", "Бельгия", "Бенин", "Болгария", "Боливия", "Босния и Герцеговина", "Ботсвана", "Бразилия", "Буркина-Фасо", "Бурунди", "Бутан", "Вануату", "Ватикан", "Великобритания", "Венгрия", "Венесуэла", "Вьетнам", "Габон", "Гаити", "Гайана", "Гамбия", "Гана", "Гватемала", "Гвинея", "Гвинея-Бисау", "Германия", "Голландия", "Гондурас", "Гонконг", "Гренада", "Гренландия", "Греция", "Грузия", "Гуам", "Дания", "Демократическая Республика Конго", "Джибути", "Доминиканская республика", "Египет", "Замбия", "Западная Сахара", "Зимбабве", "Израиль", "Индия", "Индонезия", "Иордания", "Ирак", "Иран", "Ирландия", "Исландия", "Испания", "Италия", "Йемен", "Кабо-Верде", "Казахстан", "Камбоджа", "Камерун", "Канада", "Катар", "Кения", "Кипр", "Киргизия", "Кирибати", "Китай", "КНДР", "Колумбия", "Коморские острова", "Коста-Рика", "Кот-д'Ивуар", "Куба", "Кувейт", "Лаос", "Латвия", "Лесото", "Либерия", "Ливан", "Ливия", "Литва", "Лихтенштейн", "Люксембург", "Маврикий", "Мавритания", "Мадагаскар", "Македония", "Малави", "Малайзия", "Мали", "Мальдивы", "Мальта", "Марокко", "Мартиника", "Мексика", "Микронезия", "Мозамбик", "Молдавия", "Монако", "Монголия", "Мьянма", "Намибия", "Непал", "Нигер", "Нигерия", "Никарагуа", "Новая Зеландия", "Новая Каледония", "Норвегия", "ОАЭ", "Оман", "Пакистан", "Палестина", "Панама", "Папуа-Новая Гвинея", "Парагвай", "Перу", "Польша", "Португалия", "Пуэрто-Рико", "Республика Конго", "Республика Корея", "Россия", "Руанда", "Румыния", "Сальвадор", "Сан-Марино", "Сан-Томе и Принсипи", "Саудовская Аравия", "Свазиленд", "Сенегал", "Сент-Китс и Невис", "Сент-Люсия", "Сербия", "Сингапур", "Сирия", "Словакия", "Словения", "Соломоновы острова", "Сомали", "Судан", "Суринам", "США", "Сьерра-Леоне", "Таджикистан", "Таиланд", "Тайвань", "Танзания", "Того", "Тонга", "Тринидад и Тобаго", "Тунис", "Туркменистан", "Турция", "Уганда", "Узбекистан", "Украина", "Уругвай", "Фиджи", "Филиппины", "Финляндия", "Франция", "Французская Гвиана", "Хорватия", "Центральноафриканская Республика", "Чад", "Черногория", "Чехия", "Чили", "Швейцария", "Швеция", "Шри-Ланка", "Эквадор", "Экваториальная Гвинея", "Эритрея", "Эстония", "Эфиопия", "ЮАР", "Ямайка", "Япония"];
-var input = document.getElementById('country');
-var list = document.getElementById('autocomplite_list');
-input.addEventListener('keyup', complite);
-list.addEventListener('click', selectWord);
-function selectWord(event) {
-	var targ = event.target //Элемент, на котором произошло событие
-	if (targ.parentNode === list) {
-		input.value = targ.innerHTML;
-		list.style.display = 'none';
-	}
-}
-
-function complite() {
-	var val = input.value.trim().toLowerCase();
-	if (val) {
-		var words = countries.filter(function(item) {
-			return item.toLowerCase().indexOf(val) === 0;
-		});
-		list.innerHTML = getComliteHtml(words);
-		list.style.display = 'block';
-		positionList();
-	} else {
-		list.style.display = 'none';
-	}
-}
-
-function positionList() {
-	list.style.width = input.offsetWidth - 2 + 'px';
-	var XY = input.getBoundingClientRect();
-	list.style.left = XY.left + pageXOffset + 'px';
-	list.style.top = XY.bottom + pageYOffset + 'px';
-}
-
-function getComliteHtml(words) {
-	var html = "";
-	for (var i = 0; i < words.length; i++) {
-	    html += '<div>' + words[i] + '</div>'
-	}
-		return html;
-	}
+var daysEl = document.getElementById('days');
+		var dateEl = document.getElementById('date');
+		var prevEl = document.getElementById('prev');
+		var nextEl = document.getElementById('next');
+		var deferentMonth = 0;
+		var oneHour = 1000 * 60 * 60;
+		var oneDay = oneHour * 24;
+		var MONTHS = [
+			'Январь','Февраль','Март','Апрель', 
+			'Май','Июнь','Июль','Август',
+			'Сентябрь','Октябрь','Ноябрь','Декабрь'
+		];
+		create();
+		prevEl.addEventListener('click', prev);
+		nextEl.addEventListener('click', next);
+		function prev() {
+			deferentMonth--;
+			create();
+		}
+		function next() {
+			deferentMonth++;
+			create();
+		}
+		function create() {
+			var d = new Date();	
+			d.setMonth(d.getMonth() + deferentMonth);
+			var year = d.getFullYear();
+			var month = d.getMonth();
+			var dayCount = (new Date(year, month + 1, 0)).getDate();
+			var dayStart = (new Date(year, month, 1)).getDay();
+			if (dayStart === 0) {
+				dayStart = 7;
+			}
+			var today = null;
+			if (deferentMonth === 0) {
+				var today = d.getDate();
+			}
+			printDate(d);
+			generate(dayCount, today, dayStart);
+		}
+		function generate(count, today, start) {
+			var html = '';
+			for (var i = 1; i < start; i++) {
+				html += '<div class="day other"></div>';
+			}
+			for (var i = 1; i <= count; i++) {
+				var cl = 'day';
+				if (i === today) {
+					cl += ' today';
+				}
+				html += '<div class="' + cl + '">' + i + '</div>';
+			}
+			daysEl.innerHTML = html;
+		}
+		function printDate(d) {
+			dateEl.innerHTML = d.getFullYear() + ' ' 
+				+ MONTHS[d.getMonth()];
+		}

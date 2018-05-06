@@ -2,12 +2,29 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Список стран</title>
+	<title>Календарь</title>
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<input type="text" id="country" autofocus placeholder="Введите страну">
-	<div id="autocomplite_list"></div>
+	<div id="calendar">
+		<div class="controls">
+			<div id="date"></div>
+			<div class="buttons">
+				<a class="button" id="prev">&larr;</a>
+				<a class="button" id="next">&rarr;</a>
+			</div>
+		</div>
+		<div class="daysName">
+			<div>Пн</div>
+			<div>Вт</div>
+			<div>Ср</div>
+			<div>Чт</div>
+			<div>Пт</div>
+			<div>Сб</div>
+			<div>Вс</div>
+		</div>
+		<div id="days"></div>
+	</div>
 </body>
 	<script src="script.js"></script>
 </html>
