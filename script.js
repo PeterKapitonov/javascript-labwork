@@ -1,88 +1,55 @@
-var game = document.getElementById('game');
-	var message = document.getElementById('message');
-	var restart = document.getElementById('restart');
-	var win_x = document.getElementById('win_x');
-	var win_0 = document.getElementById('win_0');
-	var win_draw = document.getElementById('win_draw');
-	var cells = document.getElementsByClassName('cell');
-	var player = 'x';
-	var paused = false;
-	var data = []; //Здесь будут хратися отмеченые ячейки
-	win = {x: 0, '0': 0, draw: 0};
-	var stepCount = 0;
-	var winIndex = [
-		[0, 1, 2], 
-		[3, 4, 5], 
-		[6, 7, 8], 
-		[0, 3, 6], 
-		[1, 4, 7], 
-		[2, 5, 8], 
-		[0, 4, 8], 
-		[2, 4, 6]
-	];
-		
-for (var i = 0; i < cells.length; i++) {
-		addEvent(cells[i]);
+var checkEl = document.getElementById('check');
+var questionsEl = document.getElementsByClassName('question');
+var result = [];
+checkEl.addEventListener('click', checkAnswers);
+function checkAnswers() {
+	for (var i = 0; i < questionsEl.length; i++) {
+		var answers = questionsEl[i].querySelectorAll('input[type=radio]');
+		result.push( checkOneAnswer(answers) );
 	}
-	restart.addEventListener('click', gameRestart);
-	function addEvent(cell) {
-		cell.addEventListener('click', step);
-		function step() {
-			if (!cell.innerHTML && !paused) {
-				cell.innerHTML = player;
-				var id = cell.getAttribute('data-id');
-			data[id] = player;
-				stepCount++;
-				if (checkWin()) {
-					message.innerHTML = 'Выиграл: ' + player;
-					win[player]++;
-					stepCount = 0;
-					paused = true;
-				} else {
-					changePlayer();
-				}
-				if (stepCount >= 9) {
-					win.draw++;
-					stepCount = 0;
-					message.innerHTML = 'Ничья';
-				}
-				updateStatistics();
-			}	
-		}
-	}
-	function checkWin() {
-		for (var i = 0; i < winIndex.length; i++) {
-			var id = winIndex[i];
-			var check = data[id[0]] &&
-				data[id[0]] == data[id[1]] && 
-				data[id[1]] == data[id[2]];
-			if (check) {
-				return true;
-			}
-		}
-		return false;
-	}
-	function changePlayer() {
-			if (player === 'x') {
-				player = '0';
+	printResult();
+	result = [];
+}
+function checkOneAnswer(answers) {
+	var result = null;
+	var noAnswer = true;
+	for (var i = 0; i < answers.length; i++) {
+		var isTrue = (answers[i].getAttribute('data-true') !== null);
+		if (answers[i].checked) {
+			noAnswer = false;
+			if (isTrue) {
+				result = true;
 			} else {
-				player = 'x';
+				result = false;
 			}
-			message.innerHTML = 'Ходит: ' + player;
-		}
-		function clear() {
-			for (var i = 0; i < cells.length; i++) {
-				cells[i].innerHTML = '';
+		} else {
+			if (isTrue) {
+				result = false;
 			}
 		}
-		function gameRestart() {
-			clear();
-			changePlayer();
-			data = [];
-			paused = false;
+	}
+	if (noAnswer) {
+		result = null;
+	}
+	return result;
+}
+function printResult() {
+	var trueAnswers = 0;
+	var falseAnswers = 0;
+	var noAnswers = 0;
+	for (var i = 0; i < result.length; i++) {
+		if (result[i] === true) {
+			trueAnswers++;
+		} else if (result[i] === false) {
+			falseAnswers++;
+		} else if (result[i] === null) {
+			noAnswers++;
 		}
-		function updateStatistics() {
-			win_x.innerHTML = win.x; 
-			win_0.innerHTML = win['0']; 
-			win_draw.innerHTML = win.draw; 
-		}
+	}
+	var all = trueAnswers + falseAnswers + noAnswers;
+	var percent = Math.round((trueAnswers/all) * 100);
+	var msg = 'Правильных ответов: ' + trueAnswers + ' (' + percent + '%)\n'
+		+ 'Неправильных ответов: ' + falseAnswers + '\n'
+		+ 'Без ответов: ' + noAnswers + '\n';
+	alert(msg);
+}
