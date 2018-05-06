@@ -18,17 +18,6 @@ input{
     width: 100px; /* Ширина блока */
     margin-bottom: 10px;
 }
-input[type="submit"]{
-  height: 30px; /* Высота блока */
-    width: 120px; /* Ширина блока */
-    margin-bottom: 10px;
-}
-.task3 p select,.task3 p input{
-    height: 30px; /* Высота блока */
-    width: 160px; /* Ширина блока */
-    margin-bottom: 10px;
-}
-
 .basis{
   border: 2px solid #fff;
   width: 100%;
@@ -48,7 +37,56 @@ input[type="submit"]{
 .otstyp{
   padding:10pt;
 }
-#color4{
-  width:200px;
+
+#num4{
+  width: 200px;
+  height: 30px;
+}
+.task5 input{
+  width: 150px;
+}
+#task6{
+  width: 450px;
+}
+#task7{
+  width: 450px;
+  height: 220px;
+}
+#task10{ 
+  width: 250px;
 }
 
+#task11{ 
+  width: 250px;
+}
+
+#task12{ 
+  width: 250px;
+}
+
+#task14{ 
+  width: 140px;
+}
+
+.task15{
+  height: 340px;
+}
+
+#task15{
+  width: 440px;
+}
+
+.task19 img{
+  width: 150px;
+  height: 70px;
+}
+
+.task20 img{
+  width: 150px;
+  height: 70px;
+}
+
+.task21 img{
+  width: 150px;
+  height: 70px;
+}

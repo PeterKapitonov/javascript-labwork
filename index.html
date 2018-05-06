@@ -6,81 +6,180 @@
 	<link rel="stylesheet" href="style.css">
 	<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
 </head>
-<body >
-	<h1>Урок 29."Задачи на разные полезные темы JavaScript"</h1>
+<body>
+	<h1>Урок 30."Практика JavaScript для новичков"</h1>
 	<div class="basis">
+		<div class="task task1"><span>task1</span><br>
+			<form action="" >
+				<input type="text" name="" id="">+
+				<input type="text" name="" id="">+
+				<input type="text" name="" id="">=
+				<input type="text" name="" id="" disabled="false">
+			</form>
+			<button onclick="task1()">Нажми на меня!</button>
+
+		</div>
+		<div class="task task2"><span>task2</span><br>
+			<p id="result"></p>
+			<input type="text" class="num" value="1">+
+			<input type="text" class="num">+
+			<input type="text" class="num">+
+			<input type="text" class="num">+
+			<input type="text" class="num">
+			<button onclick="task2()">Нажми на меня!</button>
+		</div>
+		<div class="task task3">
+			<span>task3.Введите число после нажмите на другом месте чтобы узнать сумму цифр</span><br>
+			<input id="num3" type="text" onblur="task3()">
+			
+		</div>
+
+		<div class="task task4">
+			<span>task4.Введите числа через запятую после нажмите на другом месте </span><br>
+			<input id="num4" type="text" onblur="task4()">
+			
+		</div>
+		<div class="task task5">
+			<span>task5.Введите ФИО через пробел</span><br>
+				<input type="text" class="num" onblur="task5(this)"><br>
+				<input type="text" class="num5" disabled="false">
+				<input type="text" class="num5" disabled="false">
+				<input type="text" class="num5" disabled="false">
+		</div>
+		<div class="task task6"><span class="otstyp">task6.Введите ФИО с маленькой буквы через пробел </span>
+			<input type="text" id="task6" >
+		</div>
+		<div class="task task7"><span class="otstyp">task7.Введите текст</span>
+			<textarea id="task7" onblur="task7()"></textarea>
+			<p id="task7-1"></p>
+		</div>
+		<div class="task task8"><span class="otstyp">task8</span>
+			<input type="text" id="task8" value="">
+			<p id="result8"></p>  
+		</div>
+		<div class="task task9"><span class="otstyp">task9.Введите число ввиде 31.12.2016</span><br>
+			<input type="text" id="task9" value="">   
+		</div>
+		<div class="task task10"><span class="otstyp">task10.Ведите год рождения</span><br>
+			<input id="task10" type="text" value="" placeholder="Введите год рождения"><br>
+			<button id="btn10">нажми</button>
+			<p id="result10"></p> 
+		</div>
+		<div class="task task11"><span class="otstyp">task11.Введите дату в формате 31.12.2016</span><br><br>
+			<input id="task11" type="text" value="" placeholder="Введите дату">
+			<p id="text11"></p> 
+		</div>
+
+		<div class="task task12"><span class="otstyp">task12.Введите слово которое читается с начала и с конца одинаково (например, мадам)</span><br><br>
+			<input id="task12" type="text" value="" placeholder="Введите слово"><br>
+			<button id="but12">Нажми</button>  
+		</div>
+
+		<div class="task task13"><span class="otstyp">task13.Проверьте по вводу, что это число содержит внутри себя цифру 3</span><br>
+			<input type="text"  id="task13" placeholder="Введите число">
+		</div>
+
+		<div class="task task14"><span class="otstyp">task14</span>
+					<p>	
+				Абзац с текстом.
+			</p>
+			<p>
+				Абзац с текстом.
+			</p>
+			<p>
+				Абзац с текстом.
+			</p>
+			<p>
+				Абзац с текстом.
+			</p>
+			<p>
+				Абзац с текстом.
+			</p>
+			
+			<input type="submit" value="Нажмите на меня!" onclick="task14()" id="task14">
+		</div>
+
+		<div class="task task15"><span class="otstyp">task15</span>
+				<p>1</p>
+				<p>12</p>
+				<p>133</p>
+				<p>7</p>
+				<p>11</p>
+				<p>33</p>
+
+			<button id="btn15">Нажми</button>
+			<input id="task15" type="text" value="">   
+		</div>
+
+		<div class="task task16"><span class="otstyp">task16</span><br>
+				<a href="http://google.com">cсылка</a><br>
+				<a href="http://yandex.ru">cсылка</a><br>
+				<a href="http://yolo.ru">cсылка</a><br>
+				<a href="http://dobro.ru">cсылка</a>  
+		</div>
 		
-		<div class="task task1"><span class="otstyp">task1</span>
-			<form action="" id="form">
-				<input type="text" value="1">+
-				<input type="text" value="2">+
-				<input type="text" value="3">+
-				<input type="text" value="4">=
-				<input type="text" value="" disabled="false">
-			</form>
-			<input type="submit"  value="Нажми на меня" id="batton1" onfocus="task1()">
+		<div class="task task17"><span class="otstyp">task17.Если ссылка начинается с https://, то добавьте ей в конец стрелку &rarr;</span><br>
+				<a href="http://google.com">cсылка</a><br>
+				<a href="http://yandex.ru">cсылка</a><br>
+				<a href="http://yolo.ru">cсылка</a><br>
+				<a href="https://dobro.ru">cсылка</a><br>
+				<button onclick="task17()">Нажми</button>
 		</div>
-		<div class="task task2"><span class="otstyp">task2.Сумма всех элементов</span>
-			<form action="">
-				<input type="text" value="1">+
-				<input type="text" value="2">+
-				<input type="text" value="3">+
-				<input type="text" value="4">+
-			</form>
-			<form action="">
-				<input type="text" value="1">+
-				<input type="text" value="2">+
-				<input type="text" value="3">+
-				<input type="text" value="4">=
-				<input type="text" value="" disabled="false">
-			</form>
-			<input type="submit"  value="Нажми на меня" id="batton2" onfocus="task2()">
-		</div>
-		<div class="task task3" onclick="task3()"><span class="otstyp">task3.</span>
-			<form>
-   				<p><select name="select" size="1" id="color" >
-    				<option selected value="red">Красный</option>
-    				<option value="blue">Синий</option>
-    				<option value="orange">Оранжевый</option>
-    				<option value="mediumorchid">Фиолетовый</option>
-   				</select>
-   				<input type="text" id="color2" value="" placeholder="" disabled="false">
- 				</p> 
-  			</form>
-		</div>
-		<div class="task task4"><span class="otstyp">task4.Наведите на форму и нажмите на кнопку клавиатуры</span>
-			<form>
-   				<p><select name="select" size="1" id="task4-1" disabled="false">
-    				<option value="1">1Красный</option>
-    				<option value="2">1Синий</option>
-    				<option value="3">1Оранжевый</option>
-    				<option value="4">1Фиолетовый</option>
-    				<option value="5">2Красный</option>
-    				<option value="6">2Синий</option>
-    				<option value="7">2Оранжевый</option>
-    				<option value="8">2Фиолетовый</option>
-   				</select>
-   				<input type="text" id="color4" value="" placeholder="Введите цивру до 8 " ><br>	
- 				</p> 
-  			</form>
-
-		</div>
-		<div class="task "><span class="otstyp">task5.Наведите на форму и нажмите на кнопку клавиатуры</span>
-			<form id="task5">
-				<select name="select" size="1" id="task5-1" >
-    				<option selected value="1">Россия</option>
-    				<option value="2">США</option>
-    				<option value="3">Италия</option>
-    				
-   				</select>
-   			</form>
-   			<input type="submit" value="нажмите"  onclick="task5()">
-
-		</div>
-		
-
-	</div>
 	
+		<div class="task task18"><span class="otstyp">task18.Нажми на число</span><br>
+				<p>2</p>
+				<p>3</p>
+				<p>6</p>
+		</div>
+
+		<div class="task task19"><span class="otstyp">task19.Нажми на картинку</span><br>
+				<img onclick="task19()" src="https://s00.yaplakal.com/pics/pics_original/4/6/4/10101464.jpg" id="img">
+				<img onclick="task19()" src="http://www.prikol.ru/wp-content/gallery/october-2017/kartinki-04102017-001.jpg" id="img">
+				<img onclick="task19()" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShf9sA5lvkQVq13GZMm7KORpVmqRf9qmnx9omWhT11so-yuMxr" id="img"> 
+		</div>
+
+		<div class="task task20"><span class="otstyp">task20.Нажми на картинку два раза</span><br>
+				<img onclick="task20()" src="https://s00.yaplakal.com/pics/pics_original/4/6/4/10101464.jpg" id="img">
+				<img onclick="task20()" src="http://www.prikol.ru/wp-content/gallery/october-2017/kartinki-04102017-001.jpg" id="img">
+				<img onclick="task20()" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShf9sA5lvkQVq13GZMm7KORpVmqRf9qmnx9omWhT11so-yuMxr" id="img"> 
+		</div>
+
+		<div class="task task21"><span class="otstyp">task21.Нажми на картинку</span><br>
+				<img onclick="task21()" src="https://s00.yaplakal.com/pics/pics_original/4/6/4/10101464.jpg" id="img">
+				<img onclick="task21()" src="http://www.prikol.ru/wp-content/gallery/october-2017/kartinki-04102017-001.jpg" id="img">
+				<img onclick="task21()" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShf9sA5lvkQVq13GZMm7KORpVmqRf9qmnx9omWhT11so-yuMxr" id="img"> 
+				<img  id="task" style="height:50px;"> 
+		</div>
+
+
+		<div class="task task22"><span class="otstyp">task22.</span><br>
+				<input id="task22" type="text" value="13">
+				<input class="cls" type="submit" value="1" >
+				<input class="cls" type="submit" value="-1">
+		</div>
+
+		<div class="task task23"><span class="otstyp">task23.Введите число либо меньше либо больше 100</span><br>
+				<input id="task23" type="text" value="" placeholder="Введите число">
+		</div>
+
+		<div class="task task24"><span class="otstyp">task24.Выделите текст</span><br>
+				<input type="text">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+		</div>
+
+
+		<div class="task task27"><span class="otstyp">task27.Обновите страницу</span><br>
+				<input id="input27" type="text" value="2">
+		</div>
+
+		<div class="task task45"><span class="otstyp">task45.</span><br>
+				<input type="text"><br>
+				<button>Жми</button>
+				<ul></ul> 
+		</div>
+
+
+
 </body>
 <script src="script.js"></script>
 </html>
