@@ -1,53 +1,55 @@
 
 function task1(){
-	var ul = document.getElementsByTagName('ul');
-	ul[0].addEventListener('click', addSign);
-	ul[1].addEventListener('click', addSign);
-	function addSign() {
-		event.target.innerHTML = event.target.innerHTML + '!';
+	var form=document.getElementById('form');
+	var sum=0;
+	var form_1=document.forms;
+	for(var i=0;i<form_1[0].elements.length-1;i++){
+		sum+=Number(form_1[0].elements[i].value);
 	}
 
-	var button = document.getElementById('task111');
-	button.addEventListener('click', task1_0);
-
-	function task1_0() {
-		var li = document.createElement('li');
-		li.innerHTML = 'пункт';
-		ul[0].appendChild(li);
-	}
-
-	var button1 = document.getElementById('task112');
+	var button1 = document.getElementById('batton1');
 	button1.addEventListener('click', task1_1);
 
 	function task1_1() {
-		var li = document.createElement('li');
-		li.innerHTML = 'пункт';
-		ul[1].appendChild(li);
+		form_1[0].elements[4].value=sum;
 	}
 	
 }
 
 function task2(){
-	var table=document.getElementById('onclock');//таблица
-	var addition=document.getElementById('sur-name');//input с именем и фамилией
-	if(event.keyCode==13){
-		var mass=addition.value.split(' ');
-		if(mass.length==2){
-			if(isNaN(mass[0]) && isNaN(mass[1]) ){
-				table.innerHTML=table.innerHTML+'<tr><td id="surname">'+mass[0]+'</td><td id="name">'+mass[1]+'</td></tr>';
-			}else{
-				alert('Введите правлиьно своё имя');
-			}
-
-				
-		}else{
-			alert('Введите правлиьно своё имя');
+	var sum=0;
+	var form_1=document.forms;
+	for(var i=1;i<form_1.length;i++){
+		for(var j=0;j<form_1[i].elements.length;j++){
+			sum+=Number(form_1[i].elements[j].value);
 		}
 	}
-	table.addEventListener('click',addSign);
-	function addSign(){
-		var art=prompt('Введите изменения:');
-		event.target.innerHTML= String(art);
+	var button2 = document.getElementById('batton2');
+	button2.addEventListener('click', task1_1);
+
+	function task1_1() {
+		form_1[2].elements[4].value=sum;
 	}
 }
+
+function task3(){
+	var color=document.getElementById('color');
+	var color2=document.getElementById('color2');
+	color2.value=color.value;
+	window.setInterval(task3,500);
+}
+
+
+function task4(){
+	var select = document.getElementById('select4-1');
+	var num = document.getElementById('color4');
+
+	var options = select.options;
+
+	if(event.keyCode==13){
+		options[num].selected == true;
+	}
+}
+
+
 

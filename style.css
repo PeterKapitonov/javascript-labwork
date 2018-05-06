@@ -13,6 +13,21 @@ h1 {
   font-weight: normal; /* Нормальное начертание текста  */
 
 }
+input{
+	height: 30px; /* Высота блока */
+    width: 100px; /* Ширина блока */
+    margin-bottom: 10px;
+}
+input[type="submit"]{
+  height: 30px; /* Высота блока */
+    width: 120px; /* Ширина блока */
+    margin-bottom: 10px;
+}
+.task3 p select,.task3 p input{
+    height: 30px; /* Высота блока */
+    width: 160px; /* Ширина блока */
+    margin-bottom: 10px;
+}
 
 .basis{
   border: 2px solid #fff;
@@ -33,16 +48,7 @@ h1 {
 .otstyp{
   padding:10pt;
 }
+#color4{
+  width:200px;
+}
 
-.task1{
-  height: 450px;
-}
-th,td{
-  width:150px;
-  text-align: center;
-}
-#sur-name{
-  height: 30px;
-  width: 400px;
-  font-size: 20px;
-}

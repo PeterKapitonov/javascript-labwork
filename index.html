@@ -6,42 +6,79 @@
 	<link rel="stylesheet" href="style.css">
 	<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
 </head>
-<body onload="task1(),task2()">
-	<h1>Урок 28."Задачи на продвинутую работу с объектом Event на JavaScript"</h1>
+<body >
+	<h1>Урок 29."Задачи на разные полезные темы JavaScript"</h1>
 	<div class="basis">
 		
 		<div class="task task1"><span class="otstyp">task1</span>
-			<ul id="task1-0">
-				<li>нажми на меня!</li>
-				<li>нажми на меня!</li>
-				<li>нажми на меня!</li>
-				
-			</ul>
-			<ul id="task1-1">
-				<li>нажми на меня!</li>
-				<li>нажми на меня!</li>
-				<li>нажми на меня!</li>
-				
-			</ul>
-			<button id="task111">Нажми чтобы добавить li к 1-ой колонке</button>
-			<button id="task112">Нажми чтобы добавить li к 2-ой колонке</button>
+			<form action="" id="form">
+				<input type="text" value="1">+
+				<input type="text" value="2">+
+				<input type="text" value="3">+
+				<input type="text" value="4">=
+				<input type="text" value="" disabled="false">
+			</form>
+			<input type="submit"  value="Нажми на меня" id="batton1" onfocus="task1()">
 		</div>
-		<div class="task task2"><span class="otstyp">
-			<input type="text" id="sur-name" placeholder="Введите фамилию и имя через пробел" onkeypress="task2()">
-			<table border="1" cellpadding="0" cellspacing="0" id="onclock">
-				<tr>
-					<th>Фамилия</th>
-					<th>Имя</th>
-				</tr>
-				<tr>
-					<td >Иванов</td>
-					<td >Евгений</td>
+		<div class="task task2"><span class="otstyp">task2.Сумма всех элементов</span>
+			<form action="">
+				<input type="text" value="1">+
+				<input type="text" value="2">+
+				<input type="text" value="3">+
+				<input type="text" value="4">+
+			</form>
+			<form action="">
+				<input type="text" value="1">+
+				<input type="text" value="2">+
+				<input type="text" value="3">+
+				<input type="text" value="4">=
+				<input type="text" value="" disabled="false">
+			</form>
+			<input type="submit"  value="Нажми на меня" id="batton2" onfocus="task2()">
+		</div>
+		<div class="task task3" onclick="task3()"><span class="otstyp">task3.</span>
+			<form>
+   				<p><select name="select" size="1" id="color" >
+    				<option selected value="red">Красный</option>
+    				<option value="blue">Синий</option>
+    				<option value="orange">Оранжевый</option>
+    				<option value="mediumorchid">Фиолетовый</option>
+   				</select>
+   				<input type="text" id="color2" value="" placeholder="" disabled="false">
+ 				</p> 
+  			</form>
+		</div>
+		<div class="task task4"><span class="otstyp">task4.Наведите на форму и нажмите на кнопку клавиатуры</span>
+			<form>
+   				<p><select name="select" size="1" id="task4-1" disabled="false">
+    				<option value="1">1Красный</option>
+    				<option value="2">1Синий</option>
+    				<option value="3">1Оранжевый</option>
+    				<option value="4">1Фиолетовый</option>
+    				<option value="5">2Красный</option>
+    				<option value="6">2Синий</option>
+    				<option value="7">2Оранжевый</option>
+    				<option value="8">2Фиолетовый</option>
+   				</select>
+   				<input type="text" id="color4" value="" placeholder="Введите цивру до 8 " ><br>	
+ 				</p> 
+  			</form>
 
-				</tr>
+		</div>
+		<div class="task "><span class="otstyp">task5.Наведите на форму и нажмите на кнопку клавиатуры</span>
+			<form id="task5">
+				<select name="select" size="1" id="task5-1" >
+    				<option selected value="1">Россия</option>
+    				<option value="2">США</option>
+    				<option value="3">Италия</option>
+    				
+   				</select>
+   			</form>
+   			<input type="submit" value="нажмите"  onclick="task5()">
 
-			</table>
-
+		</div>
 		
+
 	</div>
 	
 </body>
