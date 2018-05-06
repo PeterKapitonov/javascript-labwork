@@ -1,77 +1,67 @@
 
 function task1(){
-	var arr = [5, 6, 7, 8, 9];
-	var newArr = [];
-	arr.forEach(function(elem) {
-		newArr.push(elem * elem);
-	});
-	alert(newArr)  
+	let newArr = ['первый', 'второй', 'третий', 'четвертый', 'пятый', 'шестой', 'седьмой'];
+	let [elem1, elem2, ...arr] = newArr;
+	document.write(elem1 + '| '+ elem2 + '|' +arr); 
 } 
 
 function task2(){
-	var arr = [5, 6, 7, 8, 9];
-	var sum = 0;
-	arr.forEach(function(elem) {
-		sum += elem;
-	});
-	alert(sum)    
+	let newArr = ['первый', 'второй', 'третий', 'четвертый', 'пятый', 'шестой', 'седьмой'];
+	newArr.reverse();
+	let [elem1, elem2] = newArr;
+	document.write(elem1 + '|'+ elem2);
 } 
 
 
 function task3(){
-	var arr = [5, 6, 7, 8, 9];
-	var newArr = arr.map(function(elem) {
-		return elem * elem;
-	});
-	document.write(newArr);   
+	let newArr = ['первый', 'второй', 'третий', 'четвертый', 'пятый', 'шестой', 'седьмой'];
+	let [, elem2] = newArr;
+	alert(elem2);  
 
 } 
 
 function task4(){
-	var arr = [5, 6, 7, -8, 9];
-	function func(elem){return elem > 0};
-	alert(arr.every(func));  
+	let newArr = ['первый', 'второй'];
+	let [, elem2 = 'bbb', elem3 = 'eee'] = newArr;
+	document.write(elem2+' '+elem3); 
 
 } 
 
 function task5(){
-	var arr = [5, 6, -7, 8, 9];
-	function func(elem){return elem < 0};
-	alert(arr.some(func));  
+	let user = {
+		name: 'Пётр',
+		surname: 'Петров',
+		age: '20 лет'
+	};
+
+	let{name, surname, age} = user;
+	document.write(name + ' ' + surname + ' ' + age);  
 } 
 
 function task6(){
-	var arr = [1, -3, 5, 6, -7, 8, 9, -11];
-	function func(elem){return elem < 0};
-	var newArr = arr.filter(func);
-	alert(newArr);  
+	let user = {
+		//name: 'Пётр',
+		surname: 'Петров',
+		//age: '20 лет'
+	};
+
+	let{name = 'Аноним', surname = 'Анонимович', age = '? лет'} = user;
+	document.write(name + ' ' + surname + ' ' + age); 
 } 
 
 
 function task7(){
-	var arr = [1, -3, 5, 6, -7, 8, 9, -11];
-	function func(elem){return elem % 2 == 0};
-	var newArr = arr.filter(func);
-	alert(newArr); 
+	let arr = ['elem1', 'elem2', 'elem3'];
+	for (let curr of arr){
+		alert(curr);
+	}
 }
 
 function task8(){
-	var arr = ['aaa', 'aaaqqq', 'zzzqq', 'zz', 'qsaa', 'q', 'az'];
-	function func(elem){return elem.length > 5};
-	var newArr = arr.filter(func);
-	alert(newArr);  
+	let arr = ['elem1', 'elem2', 'elem3'];
+	arr.reverse();
+	for (let curr of arr){
+		alert(curr);
+	} 
 }
 
-function task9(){
-	var arr = [1, 'string', [3, 4], 5, [6, 7]];
-	function func(elem){return Array.isArray(elem)};
-	var newArr = arr.filter(func);
-	alert(newArr);  
-}
-
-function task10(){
-	var arr = [5, -3, 6, -5, 0, -7, 8, 9];
-	function func(elem){return elem < 0};
-	var newArr = arr.filter(func);
-	alert(newArr.length);  
-}
