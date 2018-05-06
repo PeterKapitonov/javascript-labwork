@@ -1,72 +1,38 @@
-body{
-
+#game {
+	width: 312px;
+	border: 1px solid #cf1a1a;
+	margin: 0 auto;
+	font-size: 0;
 }
-.calculator{
-	width:300px;
-	height: 400px;
-	border:1px solid #000;
-}
-.window{
-	width:270px;
-	height: 50px;
-	border:1px dotted #000;
-	margin: 15px;
-	margin-top: 20px;
-}
-#tor-c{
-	margin: 5PX;
-	width:25px;
-	height: 25px;
-}
-#window{
-	width: 170px;
-	height: 20px;
-	font-size: 20px;
-	margin: 6PX;
-	margin-top: 10px;
-}
-.symbol{
-	width:250px;
-	height: 260px;
-	border:1px dotted #000;
-	margin: 25px;
-}
-.symbol div{         /*кнопки */
+.cell {
+	width: 102px;
+	height:82px;
+	line-height: 50px;
+	text-align: center;
+	font-family: arial;
 	display: inline-block;
-	width: 40px;
-	height: 40px;
-	font-size: 20px;
-	border:1px solid #000;
-	margin-left: 13PX;
-	margin-top: 11PX;
-	text-align: center;
-	line-height: 2em;
-}
-.symbol div:hover{
-	background: blue;
-	color:greenyellow;
+	font-size: 52px;
+	border: 1px solid #cf1a1a;
 	cursor: pointer;
-	text-align: center;
-	transition: background .1s,
-			color .1s;
+	vertical-align: middle;
+	transition: background .1s;
+	padding-top:20px;
 }
-.window div{ /*кнопка удаления последнего символа*/
-	
-	width: 30px;
-	height: 30px;
-	font-size: 20px;
-	border:1px solid #000;
-	text-align: center;
-	line-height: 2em;
-	float:right;
-	margin-top: 5px;
-	margin-right:5px;
+.cell:hover {
+	background: #eee;
 }
-.window div:hover{
-	background: blue;
-	color:greenyellow;
-	cursor: pointer;
-	text-align: center;
-	transition: background .1s,
-			color .1s;
+#message {
+	text-align: center
+}
+#restart {
+	margin: 0 auto;
+	display: block;
+}
+#statistics {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	border: 1px solid;
+	padding: 0 20px;
+	display: inline-block;
 }
