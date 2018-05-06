@@ -1,44 +1,33 @@
-#tabs {
-	width: 322px;
-	margin: 0 auto;
-	border: 2px solid #409D36;
-	border-radius: 10px;
-	padding: 15px;
-	font-family: Arial;
+#accordion {
+	margin: 10px 15%;
 }
-.tabs__list {
-	list-style-type: none;
-	padding-left: 0px;
-	margin: 0;
-	line-height: 33px;
-	display: inline-block;
-	padding-bottom: 1px;
-	border-bottom: 1px solid #f5f3f0;
-	margin-bottom: 5px;
-	border-radius: 3px;
-}
-.tabs__item {
-	display: inline-block;
-	color: #183e4c;
-	white-space: nowrap;   
-	font-family: Arial;
-	font-weight: bold;
-	font-size: 16px;
-	padding: 0px 13px;
-	background: #F5F3F0;
+#accordion > h3 {
+	color: blue;
 	cursor: pointer;
-	border-radius: 7px 7px 0 0;
-	transition: all .2s;
+	margin: 5px 0;
+	padding: .5em .5em .5em .7em;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	border: 1px solid #c5c5c5;
+	background: #f6f6f6;
+	font-weight: normal;
+	color: #454545;
 }
-.tabs__item.select {
-	color: #fff;
-	background: #409d36;
+#accordion > h3.select {
+	border: 1px solid #003eff;
+	background: #007fff;
+	font-weight: normal;
+	color: #ffffff;
+}
+#accordion > div {
+	height: 0;
+	overflow: hidden;
+	color: #333;
+	padding-left: 15px;
+	padding-right: 15px;
+	transition: height .5s;
 }
 .tabs__text {
-	display: none;
 	font: 12px Arial;
 	text-align: justify;
-}
-.tabs__text.select {
-	display: block;
 }
