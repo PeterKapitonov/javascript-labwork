@@ -1,97 +1,105 @@
 function task1(){
-	var $h2=$('#task1 h2');
-	$h2.html('!');
+	$('h2').wrap('<div>');
 }
 
 function task2(){
-	var $h3=$('#task2 h3');
-	$h3.css({color:'red'});
+	$('h2').wrap('<div class="test"></div>');
 }
 
 function task3(){
-	var $h2=$('#task3 h2');
-	$h2.css({color:'blue',fontSize:'30px'});
+	$('h2').wrapInner('<i>');
 }
 
 function task4(){
-	var $test=$('.test4');
-	$test.css({color:'red'});
+	$('h2').wrapAll('<i>');
 }
 
 function task5(){
-	var $test=$('h2.test5');
-	$test.css({color:'red'});
+	$('div > p').unwrap();
 }
 
 function task6(){
-	$('h3 + h3').css('color', 'red');
+	$('h2.task6').before('<p>!</p>');
 
 }
 
 function task7(){
-	$('li + li.www').css('color', 'red');
+	$('li.task7').after('<p>?</p>');
 
 }
 
 function task8(){
-	$('h2 i').css('color', 'red');
-
-}
-
-function task8_1(){
-	$('h2 a').css('color', 'red');
-
-}
-
-function task8_2(){
-	$('h2 i').css({'color': 'black'});
-	$('h2 a').css({'color': 'black'});
+	$('li.task8').before('<p>!</p>').after('<p>?</p>');
+	$('#task8').css({height:'480px'})
 }
 
 function task9(){
-	$('#task9 h2>i').css('color', 'red');
+	$('#task9 li').prepend('!');
 }
 
 function task10(){
-	$(':header').css('color', 'red');
+	$('#task10 li').append('!');
 }
 
 function task11(){
-	$('h2:not(.test)').css('color', 'red');
+	$('#task11 li').prepend('!').append('?').css('color', 'red');
 }
 
 function task12(){
-	$(':header:not(.test)').css('color', 'red');
+	$('#task12 li').replaceWith($('#task12 li.task12').text());
 }
 
 function task13(){
-	$(':header + :header').css('color', 'red');
+	$('li').replaceWith($('#task13 li').text().wrap('p'));
 }
 
 function task14(){
-	$(':header.test + :header.test').css('color', 'red');
+	$('#task14 li').remove();
 }
 
 function task15(){
-	$('#task15 div:empty').css('border', '1px solid red');
+	$('#task15 li').empty();
 }
 
 function task16(){
-	$('#task16 p:first').css('color', 'red');
+	alert($('#task16 .www a').attr('href'));
 }
 
 function task17(){
-	$('#task17 p:last').css('color', 'red');
+	alert($('#task17 .www a:first').attr('href'));
 }
 
 function task18(){
-	$('#task18 li:contains("Пункт")').css('color', 'red');
+	$('#task18 a').each(function (){
+		alert($(this).attr('href'));
+	});
 }
 
 function task19(){
-	$('#task19 h2:has(i)').css('color', 'red');
+	$('#task19 a').attr('href','!');
 }
 
 function task20(){
-	$('#task20 h2>i').css('color', 'red');
+	$('#task20 a').attr('target', '_blank');
+}
+
+function task21(){
+	$('#task21 a').each(function (){
+		var $elem = $(this);
+		$elem.html($elem.attr('href'));
+	});
+}
+
+function task22(){
+	$('#task22 a').each(function (){
+		var $elem = $(this);
+		$elem.html($elem.html()+'('+$elem.attr('href')+')');
+	});
+}
+
+function task23(){
+	$('#task23 a').each(function (){
+	var $elem = $(this);
+	$elem.attr('title', $elem.html());
+});
 }

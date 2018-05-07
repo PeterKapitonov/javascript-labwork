@@ -26,42 +26,26 @@ h4{
 	display: inline-block;
 }
 
-#task7{
-	height: 300px;
-}
-#task10{
-	height: 330px;
+.text2{
+	color:red;
 }
 
-#task15 div{
+.task div{
 	display: inline-block;
-	width:30px;
-	height: 30px;
-	border:1px solid blue;
-	padding-top:10px; 
 }
 
-#task16 p{
-	position: relative;
-	left:5px;
-
-}
-#task16{
-	
-	height: 320px;
+div p{
+	color:red;
 }
 
-#task17 p{
-	position: relative;
-	left:5px;
-
-}
-#task17{
-	
-	height: 320px;
+#task13{
+	height: 240px;
 }
 
-#task18{
-	
-	height: 270px;
+#task16 .www{
+	left:45px;
+}
+
+#task17 .www{
+	left:45px;
 }
