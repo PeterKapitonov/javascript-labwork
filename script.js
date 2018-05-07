@@ -1,43 +1,85 @@
-$('#task1 p').click(function() {   //task1
-	alert($(this).html());
+$('.task').before('<p')
+
+
+$('#hide1').click(function() { //task1
+	$('#elem1').slideUp(1000);
 });
 
-$('#task2 a').mouseover(task2); //task2
-function task2(){
-	$(this).html($(this).html()+'('+$(this).attr('href')+')');
-};
-
-$('#task3 a').mouseover(task3); //task3
-function task3(){
-	$(this).html($(this).html()+'('+$(this).attr('href')+')');
-	$(this).off('mouseover', task3);
-};
-
-$('#task4 input').mouseover(function(){ //task4
-	$('#test4').html($('#test4').html()+' '+$(this).attr('value'));
-	
+$('#show1').click(function() {
+	$('#elem1').slideDown(1000);
 });
 
-$('#task5 input').click(function(){ //task5
-	alert($(this).attr('value'));
-	$(this).off('click');
+$('#hide2').click(function() { //task2
+	$('#elem2').slideToggle(500,function(){
+				if($('#hide2').html() == 'свернуть'){
+					$('#hide2').html('развернуть');
+				}
+				else $('#hide2').html('свернуть');
+			}
+		
+
+	);
 });
 
-$('#task6 p').click(function(){ //task6
-	alert($(this).html()**2);
+
+$('#fadeOut3').click(function(){  //task3
+	$('#elem3').fadeOut(500);
+		return false;
 });
 
-$('#task7 p').click(function(){ //task6
-	$(this).html($(this).html()**2);
-	$(this).off('click');
+$('#fadeIn3').click(function(){  
+	$('#elem3').fadeIn(500);
+		return false;
 });
 
-$('#task7 p').dblclick(function(){ 
-	$(this).html(String($(this).html())+String($(this).html()));
-	$(this).off('dblclick');
+$('#fadeToDown3').click(function(){  
+	$('#elem3').fadeTo(500, 0.5);;    //затемнение на половину за пол сек
+		return false;
 });
 
-$('#task8 a').mouseover(task8); //task2
-function task8(){
-	$(this).html($(this).html()+'('+$(this).attr('href')+')');
-};
+$('#fadeToUp3').click(function(){  
+	$('#elem3').fadeTo(500, 1);;
+		return false;
+});
+
+
+
+$('#hide4').click(function(){  ///task4--------------
+	$('#elem4').fadeToggle(500, function(){
+		if($('#hide4').html() == 'свернуть'){
+			$('#hide4').html('показать');
+		}
+		else $('#hide4').html('свернуть');
+		});
+		return false;
+	}
+);
+
+//--------------------------------------------------task5
+
+$('#hide5').click(function(){
+	$('#elem5').hide(500);
+		return false;
+	}
+);
+
+$('#show5').click(function(){
+	$('#elem5').show(500);
+		return false;
+	}
+);
+
+//--------------------------------------------------task6
+
+$('#elem6').click(function(){
+	$(this).animate({width: '450px'}, 2000);
+		return false;
+	}
+);
+
+//--------------------------------------------------task7
+$('#elem7').click(function(){
+	$(this).animate({width: '+=200px'}, 1000);
+		return false;
+	}
+);

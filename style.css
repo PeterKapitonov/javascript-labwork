@@ -10,7 +10,7 @@ body{
 }
 .task p{
 	position: relative;
-	left:-45px;
+	left:25px;
 }
 
 h1{
@@ -26,22 +26,42 @@ h4{
 	display: inline-block;
 }
 
-#task1 p{
-	left:45px;
+.task{
+ padding: 0 auto;
+ height: 380px;
 }
 
-#task6{
-	height: 260px;
+.task div{
+	margin: 0 auto;
+	padding: 10px;
+	height: 280px;
+	width:180px;
+	border:1px solid #000;
 }
 
-#task6 p{
-	left:45px;
+#task2{
+ padding: 0 auto;
+ height: 330px;
+}
+
+#task2 div{
+	margin: 0 auto;
+	padding: 10px;
+	height: 280px;
+	width:180px;
+	border:1px solid #000;
+}
+
+#elem4{
+	height: 300px;
+}
+
+#elem6{
+	padding: 0;
+	margin: 10px 10px;
 }
 
 #task7{
-	height: 260px;
-}
-
-#task7 p{
-	left:45px;
+ overflow: auto;
+ padding: 10px;
 }
