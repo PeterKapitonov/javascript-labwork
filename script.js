@@ -1,105 +1,68 @@
 function task1(){
-	$('h2').wrap('<div>');
+	var $a=$('li').not('.test1');
+	$a.css({color:'blue'});
 }
 
 function task2(){
-	$('h2').wrap('<div class="test"></div>');
+	alert($('#task2 li').first().html());
 }
 
 function task3(){
-	$('h2').wrapInner('<i>');
+	alert($('#task3 li').last().html());
 }
 
 function task4(){
-	$('h2').wrapAll('<i>');
+	var $a=$('#task4 li').eq(4);
+	alert($a.html());
 }
 
 function task5(){
-	$('div > p').unwrap();
+	var $test=$('#task5 li').eq(-2);
+	alert($test.html());
 }
 
 function task6(){
-	$('h2.task6').before('<p>!</p>');
+	var $test=$('#task6 li').slice(1, 4);
+	$test.css('color', 'red');
 
 }
 
 function task7(){
-	$('li.task7').after('<p>?</p>');
-
+	$('li').filter('.test7').css('color', 'red');
 }
 
 function task8(){
-	$('li.task8').before('<p>!</p>').after('<p>?</p>');
-	$('#task8').css({height:'480px'})
+	$('.test8').next().css('color', 'red');
+
 }
 
+
+
 function task9(){
-	$('#task9 li').prepend('!');
+	$('.test9').prev().css('color', 'red');
 }
 
 function task10(){
-	$('#task10 li').append('!');
+	$('.test10').nextAll().css('color', 'red');
 }
 
 function task11(){
-	$('#task11 li').prepend('!').append('?').css('color', 'red');
+	$('.test11').prevAll().css('color', 'red');
 }
 
 function task12(){
-	$('#task12 li').replaceWith($('#task12 li.task12').text());
+	$('.www').nextUntil('.test12').css('color', 'red');
 }
 
 function task13(){
-	$('li').replaceWith($('#task13 li').text().wrap('p'));
+	$('.test13').prevUntil('.www').css('color', 'red');
 }
 
 function task14(){
-	$('#task14 li').remove();
+	$('h1.test14').siblings().css('color', 'red');
 }
 
 function task15(){
-	$('#task15 li').empty();
+	$('.test15').siblings('.test').css('color', 'red');
 }
 
-function task16(){
-	alert($('#task16 .www a').attr('href'));
-}
-
-function task17(){
-	alert($('#task17 .www a:first').attr('href'));
-}
-
-function task18(){
-	$('#task18 a').each(function (){
-		alert($(this).attr('href'));
-	});
-}
-
-function task19(){
-	$('#task19 a').attr('href','!');
-}
-
-function task20(){
-	$('#task20 a').attr('target', '_blank');
-}
-
-function task21(){
-	$('#task21 a').each(function (){
-		var $elem = $(this);
-		$elem.html($elem.attr('href'));
-	});
-}
-
-function task22(){
-	$('#task22 a').each(function (){
-		var $elem = $(this);
-		$elem.html($elem.html()+'('+$elem.attr('href')+')');
-	});
-}
-
-function task23(){
-	$('#task23 a').each(function (){
-	var $elem = $(this);
-	$elem.attr('title', $elem.html());
-});
-}
