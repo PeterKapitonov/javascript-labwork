@@ -2,189 +2,77 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>lesson 38</title>
+	<title>lesson 39</title>
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 	
 	<div class="task" id="task1">
-		<p>task1 Все li кроме с классом test1</p>
-		<li class="test1">hello</li>
-		<li class="test1">hello</li>
-		<li class="test1">hello</li>
-		<li class="test1">hello</li>
-		<li>hello2</li>
-		<li>hello2</li>
-		<li>hello2</li>
-		 <br>
-		<button id="button1" onclick="task1()">нажми</button>
+		<span>task1.Вывод содержимого абзацац при нажатии </span>
+		<p>h1ello1</p>
+		<p>h2ello2</p>
+		<p>h3ello3</p>
+		<p>h4ello4</p>
+		<p>h5ello5</p>
 	</div>
 	<div class="task" id="task2">
-		<p>task2 Вывод первого li</p>
-		<li>hello1</li>
-		<li>hello2</li>
-		<li>hello3</li>
-		<li>hello4</li>
-		<li>hello5</li>
-		<button id="button2" onclick="task2()">нажми</button>
+		<span>task2.По наведению на ссылку в конец запишется её href</span><br>
+		<a href="001">test</a><br>
+		<a href="002">test</a><br>
+		<a href="003">test</a><Br>
+		<a href="004">test</a><br>
+		<a href="005">test</a>
 	</div>
 	<div class="task" id="task3">
-		<p>task3 Вывод последнего li</p>
-		<li>hello1</li>
-		<li>hello2</li>
-		<li>hello3</li>
-		<li>hello4</li>
-		<li>hello5</li>
-		<li>hello6</li>
-		<button id="button3" onclick="task3()">нажми</button>
+		<span>task3.По наведению на ссылку в конец запишется её href но только 1 раз </span><br>
+		<a href="001">test</a><br>
+		<a href="002">test</a><br>
+		<a href="003">test</a><Br>
+		<a href="004">test</a><br>
+		<a href="005">test</a>
 	</div>
 	<div class="task" id="task4">
-		<p>task4 Вывод 5-го элемента списка</p>
-		<li>task01</li>
-		<li>task02</li>
-		<li>task03</li>
-		<li>task04</li>
-		<li>task05</li>
-		<li>task06</li>
-		<button id="button4" onclick="task4()">нажми</button>
+		<span>task4.наведите на input</span><br>
+		<input type="text" name="" id="" value="test1">
+		<input type="text" name="" id="" value="test2">
+		<input type="text" name="" id="" value="test3">
+		<input type="text" name="" id="" value="test4">
+		<input type="text" name="" id="" value="test5">
+		<p id="test4">11</p>
 	</div>
 	<div class="task" id="task5">
-		<p>task5 Вывод предпоследнего эленмента</p>
-		<li>hello01</li>
-		<li>hello02</li>
-		<li>hello03</li>
-		<li>hello04</li>
-		<li>hello05</li>
-		<button id="button5" onclick="task5()">нажми</button>
+		<span>task5. нажмите на input, попробуйте 2 раза</span><br>
+		<input type="text" name="" id="" value="test1">
+		<input type="text" name="" id="" value="test2">
+		<input type="text" name="" id="" value="test3">
+		<input type="text" name="" id="" value="test4">
+		<input type="text" name="" id="" value="test5">
 	</div>
 	<div class="task" id="task6">
-		<p>task6 Выбрать с 2-го по 4</p>
-		<li>hello01</li>
-		<li>hello02</li>
-		<li>hello03</li>
-		<li>hello04</li>
-		<li>hello05</li>
-		<button id="button6" onclick="task6()">нажми</button>
+		<p>task6 По нажатию на абзац выводиться квадрат числа.</p>
+		<p>1</p>
+		<p>2</p>
+		<p>3</p>
+		<p>4</p>
+		<p>5</p>
+		<p>6</p>
 	</div>
 	<div class="task" id="task7">
-		<p>task7 Найдите все li затем с помощью filter выберите все li с классом .www</p>
-		<li class="test7">hello</li>
-		<li class="test7">hello</li>
-		<li class="test7">hello</li>
-		<li class="test7">hello</li>
-		<li>hello2</li>
-		<li>hello2</li>
-		<li>hello2</li>
-		<button id="button7" onclick="task7()">нажми</button>
+		<p>task7.По нажатию на абзац выводиться квадрат числа по двойному нажатию она удвоиться</p>
+		<p>1</p>
+		<p>2</p>
+		<p>3</p>
+		<p>4</p>
+		<p>5</p>
+		<p>6</p>
 	</div>
 	<div class="task" id="task8">
-		<p>task8 Все элементы после класса test8</p>
-		<li class="test8">hello</li>
-		<li>hello2</li>
-		<li class="test8">hello</li>
-		<li class="test8">hello</li>
-		<li class="test8">hello</li>
-		<li>hello2</li>
-		<li>hello2</li>
-		<li>hello2</li>
-		<button id="button8" onclick="task8()">нажми</button>
-		
-	</div>
-	<div class="task" id="task9">
-		<p>task9 Элемент до класса test9</p>
-		<li class="test9">hello</li>
-		<li>hello2</li>
-		<li class="test9">hello</li>
-		<li class="test9">hello</li>
-		<li class="test9">hello</li>
-		<li>hello2</li>
-		<li>hello2</li>
-		<li>hello2</li>
-		<button id="button9" onclick="task9()">нажми</button>
-	</div>
-	<div class="task" id="task10">
-		<p>task10.Все элементы полсе класса</p>
-		<li class="test10">hello</li>
-		<li>hello2</li>
-		<li class="test10">hello</li>
-		<li class="test10">hello</li>
-		<li class="test10">hello</li>
-		<li>hello2</li>
-		<li>hello2</li>
-		<li>hello2</li>
-		<button id="button10" onclick="task10()">нажми</button>
-	</div>
-	<div class="task" id="task11">
-		<p>task11. Все элементы до класса</p>
-		<li class="test11">hello</li>
-		<li>hello2</li>
-		<li class="test11">hello</li>
-		<li class="test11">hello</li>
-		<li class="test11">hello</li>
-		<li>hello2</li>
-		<li>hello2</li>
-		<li>hello2</li>
-		<button id="button11" onclick="task11()">нажми</button>
-	</div>
-	<div class="task" id="task12">
-		<p>task12.Все элементы, которые лежат между элементом с классом www и элементом с классом test через nextUntil.</p>
-		<h1 class="test">test</h1>
-		<h1 class="www">test</h1>
-		<h1 class="test">test</h1>
-		<h1 class="test">test</h1>
-		<h1 class="test">test</h1>
-		<h2>test</h2>
-		<h2>test</h2>
-		<h2>test</h2>
-		<h2 class="test12">test</h2>
-		<h2>test</h2>
-		<h3>test</h3>
-		<button id="button12" onclick="task12()">нажми</button>
-	</div>
-	<div class="task" id="task13">
-		<p>task13.все элементы, которые лежат между элементом с классом test и элементом с классом www через prevUntil</p>
-		<h1 class="test">test</h1>
-		<h1 class="www">test</h1>
-		<h1 class="test">test</h1>
-		<h1 class="test">test</h1>
-		<h1 class="test">test</h1>
-		<h2>test</h2>
-		<h2>test</h2>
-		<h2>test</h2>
-		<h2 class="test13">test</h2>
-		<h2>test</h2>
-		<h3>test</h3>
-		<button id="button13" onclick="task13()">нажми</button>
-	</div>
-	<div class="task" id="task14">
-		<p>task14. Все соседи элемента с классом test14 </p>
-		<h1 class="test">test</h1>
-		<h1 class="www">test</h1>
-		<h1 class="test14">test</h1>
-		<h1 class="test">test</h1>
-		<h1 class="test">test</h1>
-		<h2>test</h2>
-		<h2>test</h2>
-		<h2>test</h2>
-		<h2 class="test14">test</h2>
-		<h2>test</h2>
-		<h3>test</h3>
-		<button id="button14" onclick="task14()">нажми</button>
-	</div>
-	<div class="task" id="task15">
-		<p>task15 Все соседи c классом test  элемента с классом test15</p>
-		<h1 class="test">test</h1>
-		<h1 class="www">test</h1>
-		<h1 class="test15">test</h1>
-		<h1 class="test">test</h1>
-		<h1 class="test">test</h1>
-		<h2>test</h2>
-		<h2>test</h2>
-		<h2>test</h2>
-		<h2 class="test14">test</h2>
-		<h2>test</h2>
-		<h3>test</h3>
-		<button id="button15" onclick="task15()">нажми</button>
+		<p>task8.По наведению на ссылку в конец запишется её href</p>
+		<a href="001">test</a><br>
+		<a href="002">test</a><br>
+		<a href="003">test</a><Br>
+		<a href="004">test</a><br>
+		<a href="005">test</a>
 	</div>
 	
 </body>

@@ -5,7 +5,7 @@ body{
 	margin:auto;
 	margin-top:10px;
 	width:600px;
-	height: 220px;
+	height: 200px;
 	border: 1px solid #000;
 }
 .task p{
@@ -26,14 +26,22 @@ h4{
 	display: inline-block;
 }
 
-.test1{
-	color:red;
+#task1 p{
+	left:45px;
 }
 
-#task1{
-	height:220px;
+#task6{
+	height: 260px;
 }
 
-#task8{
-	height:220px;
+#task6 p{
+	left:45px;
+}
+
+#task7{
+	height: 260px;
+}
+
+#task7 p{
+	left:45px;
 }
