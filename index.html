@@ -2,130 +2,283 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>lesson 39</title>
+	<title>lesson 41.Практика на отработку библиотеки jQuery</title>
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	
+	<h3>Практика на отработку библиотеки jQuery</h3>
 	<div class="task" id="task1">
-		<span>task1</span><br>
-		<button id="hide1">Спрятать</button>
-		<button id="show1">Показать</button>
-		<div id="elem1">
-			<li>001</li>
-			<li>002</li>
-			<li>003</li>
-			<li>004</li>
-			<li>005</li>
-			<li>006</li>
-			<li>007</li>
-			<li>008</li>
-			<li>009</li>
-			<li>010</li>
-		</div>
+		<p>task1.Все абзацы , внутри которых есть b, оберните в тег <div></p>
+		<p><b>hello</b></p>
+		<p><b>hello</b></p>
+		<p><b>hello</b></p>
+		<p><b>hello</b></p>
+		
+		<button id="button1" onclick="task1()">нажми</button>
 	</div>
 	<div class="task" id="task2">
-		<span>task2</span><br>
-		<button id="hide2">свернуть</button>
-		<div id="elem2">
-			<li>001</li>
-			<li>002</li>
-			<li>003</li>
-			<li>004</li>
-			<li>005</li>
-			<li>006</li>
-			<li>007</li>
-			<li>008</li>
-			<li>009</li>
-			<li>010</li>
-			<li>005</li>
-			<li>006</li>
-			<li>007</li>
-			<li>008</li>
-			<li>009</li>
-			<li>010</li>
-		</div>
-	</div>
+		<p>task2</p>
+		<p class="www2">hello</p>
+		<p class="www2">hello</p>
+		<p class="www2">hello</p>
+		<p class="www2">hello</p>
 
+		<button id="button2" onclick="task2()">нажми</button>
+	</div>
 	<div class="task" id="task3">
-		<span>task3</span><br>
-		<button id="fadeOut3">исчезнуть</button>
-		<button id="fadeIn3">появиться</button>
-		<button id="fadeToDown3">затемнить</button>
-		<button id="fadeToUp3">оттемнить</button>
-		<span>Задача на fadeIn, fadeOut</span>
-		<div id="elem3">
-			<li>001</li>
-			<li>002</li>
-			<li>003</li>
-			<li>004</li>
-			<li>005</li>
-			<li>006</li>
-			<li>007</li>
-			<li>008</li>
-			<li>009</li>
-			<li>010</li>
-			<li>005</li>
-			<li>006</li>
-			<li>007</li>
-			<li>008</li>
-			<li>009</li>
-			<li>010</li>
-		</div>
+		<p>task3.Замена p на div</p>
+		<p class="www3">hello</p>
+		<p class="www3">hello</p>
+		<p class="www3">hello</p>
+		<p class="www3">hello</p>
+		<button id="button3" onclick="task3()">нажми</button>
 	</div>
-
 	<div class="task" id="task4">
-		<span>task4</span><br>
-		<button id="hide4">свернуть</button>
-		<span>Задача на fadeToggle</span>
-		<div id="elem4">
-			<ol>
-				<li>001</li>
-				<li>002</li>
-				<li>003</li>
-				<li>004</li>
-				<li>005</li>
-				<li>006</li>
-				<li>007</li>
-				<li>008</li>
-				<li>009</li>
-				<li>010</li>
-				<li>005</li>
-				<li>006</li>
-				<li>007</li>
-				<li>008</li>
-				<li>009</li>
-				<li>010</li>
-			</ol>
-		</div>
+		<p>task4.При нажатии чекбоксы заблокируются</p>
+		<input type="checkbox" name="" id="">
+		<input type="checkbox" name="" id="">
+		<input type="checkbox" name="" id="">
+		<input type="checkbox" name="" id="">
+		<button id="button4" onclick="task4()">нажми</button>
 	</div>
 	<div class="task" id="task5">
-		<span>task5. Задача на show, hide</span><br>
-		<button id="hide5">Спрятать</button>
-		<button id="show5">Показать</button>
-		<div id="elem5">
-			<li>001</li>
-			<li>002</li>
-			<li>003</li>
-			<li>004</li>
-			<li>005</li>
-			<li>006</li>
-			<li>007</li>
-			<li>008</li>
-			<li>009</li>
-			<li>010</li>
-		</div>
+		<p>task5.все незаблокированные чекбоксы отмечаются</p>
+		<input type="checkbox" name="" id="">
+		<input type="checkbox" name="" id="">
+		<input type="checkbox" name="" id="">
+		<input type="checkbox" name="" id="">
+		<button id="button5" onclick="task5()">нажми</button>
 	</div>
 	<div class="task" id="task6">
-		<span>task6. нажмите на блок</span><br>
-		<div id="elem6"></div>
+		<p>task6</p>
+		<p>HELLO</p>
+		<p id="test6">hello</p>
+		<p>hello</p>
+		<button id="button6" onclick="task6()">нажми</button>
 	</div>
 	<div class="task" id="task7">
-		<span>task7. нажмите на блок несколько раз</span><br>
-		<div id="elem7"></div>
+		<p>task7</p>
+			<p>HELLO</p>
+			<p id="test7">hello1241241414124</p>
+			<p>hello</p>
+		<button id="button7" onclick="task7()">нажми</button>
+	</div>
+	<div class="task" id="task8">
+		<p>task8.заменяет ближйший p</p>
+			<p>HELLO</p>
+			<span>hello</span>
+			<p id="test8">hello1241241414124</p>
+			<p>hello</p>
+			<button id="button7" onclick="task8()">нажми</button>
+	</div>
+
+	<div class="task" id="task9">
+		<p>task9</p>
+		<li>hello</li>
+		<button id="button9" onclick="task9()">нажми</button>
+	</div>
+
+	<div class="task" id="task10">
+		<p>task10.четвёртый li на странице, найдёт его родителя, получит непосредственного соседа родителя сверху, обернёт его в div class="www10">.</p>
+		<li>hello</li>
+		<li>hello</li>
+		<li>hello</li>
+		<li>hello</li>
+		<button id="button10" onclick="task10()">нажми</button>
+	</div>
+	<div class="task" id="task11">
+		<p>task11. p, кроме абзацев с классом .www11 добавляестся их порядковый номер</p>
+		<p class="www11">hello</p>
+		<p class="www11">hello</p>
+		<p>hello.без</p>
+		<p>hello.без</p>
+		<button id="button11" onclick="task11()">нажми</button>
+	</div>
+	<div class="task" id="task12">
+		<p>task12. Все заголовки без класса test</p>
+		<p class="www12">hello</p>
+		<p class="www12">hello</p>
+		<p class="www12">hello</p>
+		<p class="www12">hello</p>
+		<button id="button12" onclick="task12()">нажми</button>
+	</div>
+	<div class="task" id="task13">
+		<p>task13. p>, которые стоят непосредственно под h2</p>
+			<h2>hello</h2>
+			<p class="www13">hello</p><br>
+		<button id="button13" onclick="task13()">нажми</button>
+	</div>
+	<div class="task" id="task14">
+		<p>task14.нажми на кнопку</p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<button id="button14" onclick="task14()">нажми</button>
+	</div>
+	<div class="task" id="task15">
+		<p>task15 Все пустые элементы</p>
+		<p><b>hello</b></p>
+		<p><b>hello</b></p>
+		<p><b>hello</b></p>
+		<p><b>hello</b></p>
+		<p><b>hello</b></p>
+		<button id="button15" onclick="task15()">нажми</button>
+	</div>
+	<div class="task" id="task16">
+		<p>task16.все пустые p получат содержимое ближайшего h2 </p>
+		<h2>hello</h2>
+		<p></p>
+		<p></p>
+		<p></p>
+		<button id="button16" onclick="task16()">нажми</button>
+	</div>
+	<div class="task" id="task17">
+		<p>task17 </p>
+		<input type="text" class="www17" value="1">
+		<input type="text" class="www17" value="2">
+		<input type="text" class="www17" value="3">
+		<input type="text" class="www17" value="4">
+		<input type="text" class="www17" value="5">
+		<input type="text" class="www17" value="6">
+		<input type="text" class="www17" value="7">
+		<input type="text" class="www17" value="8">
+		<input type="text" class="www17" value="9">
+		<input type="text" class="www17" value="10"><br><br>
+		<button id="button17" onclick="task17()">нажми</button>
+	</div>
+	<div class="task" id="task18">
+		<p>task18.начало содержимое соседа сверху, а в конец содержимое снизу</p>
+		<p>hello1</p>
+		<p id="test18">hello2</p>
+		<p>hello3</p>
+		<button id="button18" onclick="task18()">нажми</button>
+	</div>
+	<div class="task" id="task19">
+		<p>task19.Второй сосед сверху и второй сосед снизу поменяются местами</p>
+		<p>hello11</p>
+		<p>hello2</p>
+		<p id="test19">hello3</p>
+		<p>hello4</p>
+		<p>hello55</p>
+		<button id="button19" onclick="task19()">нажми</button>
+	</div>
+	<div class="task" id="task20">
+		<p>task20</p>
+		<h2>hello
+			<div class="www20"></div>
+		</h2>
+		<span>hello
+			<div class="www20"></div>
+		</span>
+		<button id="button20" onclick="task20()">нажми</button>
+	</div>
+
+	<div class="task" id="task21">
+		<p>task21</p>
+		<p>hello</p>
+		<p>hello</p>
+		<p>hello</p>
+		<p>hello</p>
+		<p class="www21">hello</p>
+		<p class="www21">hello</p>
+		<p class="www21">hello</p>
+		<button id="button21" onclick="task21()">нажми</button>
 	</div>
 	
-	
+	<div class="task" id="task22">
+		<p>task22.первый и последний элемент</p>
+		<p class="www22">hello</p>
+		<p class="www22">hello</p>
+		<p class="www22">hello</p>
+		<p class="www22">hello</p>
+		<p class="www22">hello</p>
+		<p class="www22">hello</p>
+		<button id="button22" onclick="task22()">нажми</button>
+	</div>
+
+	<div class="task" id="task23">
+		<p>task23.первый и последний элемент</p>
+		<p class="www23">hello1</p>
+		<p class="www23">hello2</p>
+		<p class="www23">hello3</p>
+		<p class="www23">hello4</p>
+		<p class="www23">hello5</p>
+		<p class="www23">hello6</p>
+		<button id="button23" onclick="task23()">нажми</button>
+	</div>
+
+	<div class="task" id="task24">
+		<p>task24.в конец его порядковый номер в наборе</p>
+		<p class="www24">hello</p>
+		<p class="www24">hello</p>
+		<p class="www24">hello</p>
+		<p class="www24">hello</p>
+		<p class="www24">hello</p>
+		<p class="www24">hello</p>
+		<button id="button24" onclick="task24()">нажми</button>
+	</div>
+
+	<div class="task" id="task25">
+		<p>task25.содержимое умноженное на его порядковый номер</p>
+		<p class="www25">1</p>
+		<p class="www25">2</p>
+		<p class="www25">3</p>
+		<p class="www25">4</p>
+		<p class="www25">5</p>
+		<p class="www25">6</p>
+		<button id="button25" onclick="task25()">нажми</button>
+	</div>
+
+	<div class="task" id="task26">
+		<p>task26.нажмите на абзац в середине и два соседа удалятся</p>
+		<p class="www25">1</p>
+		<p class="www26">2</p>
+		<p class="www25">3</p>
+	</div>
+
+	<div class="task" id="task27">
+		<p>task27.удалятся все абзацы сверху до загаловка</p>
+		<p class="www25">1</p>
+		<h2>hello</h2>
+		<p class="www25">1</p>
+		<p class="www25">1</p>
+		<p class="www27">нажми на меня</p>
+		<p class="www25">3</p>
+	</div>
+
+	<div class="task" id="task28">
+		<p>task28.удалится ближайший элемент снизу с классом test28</p>
+		<p class="www25">hello</p>
+		<p class="www25">hello</p>
+		<p class="www25">hello</p>
+		<p class="www28">нажми на меня</p>
+		<p class="www25">hello</p>
+		<p class="www25">hello</p>
+		<p class="test28">удалится</p>
+	</div>
+
+	<div class="task" id="task29">
+		<p>task29.удалится пятый сосед снизу</p>
+		<p class="www29">нажми на меня</p>
+		<p class="www25">hello</p>
+		<p class="www25">hello</p>
+		<p class="www25">hello</p>
+		<p class="www25">hello</p>
+		<p class="test28">удалится</p>
+		<p class="www25">hello</p>
+	</div>
+
+	<div class="task" id="task30">
+		<p>task30.удалится пятый сосед снизу если это не h2</p>
+		<p class="www30">нажми на меня</p>
+		<p class="www25">hello</p>
+		<p class="www25">hello</p>
+		<p class="www25">hello</p>
+		<p class="www25">hello</p>
+		<p class="test28">удалится</p>
+		<p class="www25">hello</p>
+	</div>
 </body>
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"> </script>
 	<script src="script.js"></script>

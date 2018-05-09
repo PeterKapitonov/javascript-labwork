@@ -5,12 +5,12 @@ body{
 	margin:auto;
 	margin-top:10px;
 	width:600px;
-	height: 200px;
+	height: 220px;
 	border: 1px solid #000;
 }
 .task p{
 	position: relative;
-	left:25px;
+	left:15px;
 }
 
 h1{
@@ -26,42 +26,76 @@ h4{
 	display: inline-block;
 }
 
-.task{
- padding: 0 auto;
- height: 380px;
+#task1 div div p{
+	color:red;
 }
 
-.task div{
-	margin: 0 auto;
-	padding: 10px;
-	height: 280px;
-	width:180px;
-	border:1px solid #000;
+#task2 p h3{
+	display: inline-block;
 }
 
-#task2{
- padding: 0 auto;
- height: 330px;
+.www10{
+	color:red;
 }
 
-#task2 div{
-	margin: 0 auto;
-	padding: 10px;
-	height: 280px;
-	width:180px;
-	border:1px solid #000;
+#task15{
+	height: 250px;
 }
 
-#elem4{
+#task19{
+	height: 250px;
+}
+
+#task21{
+	height: 310px;
+}
+#task22{
 	height: 300px;
 }
 
-#elem6{
-	padding: 0;
-	margin: 10px 10px;
+#task23{
+	height: 300px;
 }
 
-#task7{
- overflow: auto;
- padding: 10px;
+#task24{
+	height: 300px;
+}
+
+#task25{
+	height: 300px;
+}
+
+
+#task27{
+	height: 300px;
+}
+
+#task28{
+	height: 300px;
+}
+
+#task29{
+	height: 300px;
+}
+
+#task30{
+	height: 300px;
+}
+
+.www26{
+	cursor:pointer;
+}
+.www27{
+	cursor:pointer;
+}
+.www28{
+	cursor:pointer;
+}
+
+.www29{
+	cursor:pointer;
+}
+
+.www30{
+	cursor:pointer;
 }

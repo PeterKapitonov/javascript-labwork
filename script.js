@@ -1,85 +1,170 @@
-$('.task').before('<p')
+function task1(){
+	$('p:has(b)').wrap('<div>');
+}
 
+function task2(){
+	$('p.www2').prepend('!').html('<h3>'+$('p.www2').html()+'</h3>').css('color', 'red');
+}
 
-$('#hide1').click(function() { //task1
-	$('#elem1').slideUp(1000);
-});
+function task3(){
+	$('p.www3').replaceWith(function() {
+		return '<div>' + $(this).html() + '</div>';
+	});
+}
 
-$('#show1').click(function() {
-	$('#elem1').slideDown(1000);
-});
+function task4(){
+	$('#task4 :checkbox').prop('disabled', true);
+}
 
-$('#hide2').click(function() { //task2
-	$('#elem2').slideToggle(500,function(){
-				if($('#hide2').html() == 'свернуть'){
-					$('#hide2').html('развернуть');
-				}
-				else $('#hide2').html('свернуть');
-			}
-		
+function task5(){
+	$('#task5 :checkbox:not([disabled])').prop('checked', true);
+}
 
-	);
-});
+function task6(){
+	$('#test6').prev().html('!').end().next().html('?');
 
+}
 
-$('#fadeOut3').click(function(){  //task3
-	$('#elem3').fadeOut(500);
-		return false;
-});
+function task7(){
+	var $elem = $('#test7');
+	var text = $elem.html();
+	$elem.prev().html(text).end().next().html(text);
 
-$('#fadeIn3').click(function(){  
-	$('#elem3').fadeIn(500);
-		return false;
-});
+}
 
-$('#fadeToDown3').click(function(){  
-	$('#elem3').fadeTo(500, 0.5);;    //затемнение на половину за пол сек
-		return false;
-});
+function task8(){
+	var $elem = $('#test8');
+	var text = $elem.html();
+	$elem.prevUntil('p').last().prev().html(text);
 
-$('#fadeToUp3').click(function(){  
-	$('#elem3').fadeTo(500, 1);;
-		return false;
-});
+}
 
 
 
-$('#hide4').click(function(){  ///task4--------------
-	$('#elem4').fadeToggle(500, function(){
-		if($('#hide4').html() == 'свернуть'){
-			$('#hide4').html('показать');
-		}
-		else $('#hide4').html('свернуть');
-		});
-		return false;
-	}
-);
+function task9(){
+	$('#task9 li').addClass('.www').wrapInner('<i>').after('<li>привет</li>');
+}
 
-//--------------------------------------------------task5
+function task10(){
+	$('#task10 li:eq(3)').parent().prev().wrap('<div class="www10">');
+}
 
-$('#hide5').click(function(){
-	$('#elem5').hide(500);
-		return false;
-	}
-);
+function task11(){
+	$('p:not(.www11').each(function (index) {
+		$(this).append(index);
+	});
+}
 
-$('#show5').click(function(){
-	$('#elem5').show(500);
-		return false;
-	}
-);
+function task12(){
+	$('p.www12').each(function() {
+		var $elem = $(this);
+		$elem.before($elem.clone().css('color', 'red')).css('color', 'green');
+	});
+	$('#task12').css('height','350px');
+}
 
-//--------------------------------------------------task6
+function task13(){
+	$('h2 + p.www13').each(function() {
+		var $elem = $(this);
+		$elem.prev().before($elem);
+	});
+}
 
-$('#elem6').click(function(){
-	$(this).animate({width: '450px'}, 2000);
-		return false;
-	}
-);
+function task14(){
+	$('p:empty').html(function() {
+		return $(this).prev().html();
+	});
+}
 
-//--------------------------------------------------task7
-$('#elem7').click(function(){
-	$(this).animate({width: '+=200px'}, 1000);
-		return false;
-	}
-);
+function task15(){
+	$('b').each(function() {
+		$(this).parent('.www15, p').css({color: 'red', fontSize: '30px'});
+	});
+	$('#task15').css('height','420px');
+}
+
+function task16(){
+	$('p:empty').each(function() {
+		$(this).html($(this).prevAll('h2').first().html());
+	});
+	$('#task16').css('height','320px');
+}
+
+function task17(){
+	$('input.www17').val(function (index, value) {
+		return value * value;
+	});
+}
+
+function task18(){
+	var $elem = $('#test18');
+	var textPrev = $elem.prev().html();
+	var textNext = $elem.next().html();
+	$elem.prepend(textPrev+' ');
+	$elem.append(' '+textNext);
+}
+
+function task19(){
+	var $id = $('#test19');
+	var $next = $id.nextAll().eq(1);
+	var $prev = $id.prevAll().eq(1);
+	var nextText = $next.html();
+	var prevText = $prev.html();
+	$next.html(prevText);
+	$prev.html(nextText);
+}
+
+function task20(){
+	$('div.www20').children(':not(h2)').css('color', 'red');
+}
+
+function task21(){
+	$('p').css('color', 'red').filter('.www21').html('!');
+}
+
+function task22(){
+	$('p.www22').css('color', 'red').first().html('!').end().last().html('?');
+}
+
+function task23(){
+	$('p.www23').append(function (index, text) {
+		return text;
+	})
+}
+
+function task24(){
+	$('p.www24').append(function (index) {
+		return index;
+	});
+}
+
+function task25(){
+	$('p.www25').append(function (index, text) {
+		return $(this).html(index * Number(text));
+	});
+}
+
+
+	$('p.www26').on('click', function() {
+        	$(this).prev().remove().end().next().remove();
+    });
+
+
+	$('p.www27').on('click', function() {
+        	$('p').prevUntil(':header').remove();
+    });
+
+
+	$('p.www28').on('click', function() {
+        	$(this).nextAll('.test28').first().remove();
+    });
+
+
+	$('p.www29').on('click', function() {
+        	$(this).nextAll().eq(4).remove();
+    });
+
+
+	$('p.www30').on('click', function() {
+        	$(this).nextAll().eq(4).not('h2').remove();
+    });
