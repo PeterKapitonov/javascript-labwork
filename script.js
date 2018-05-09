@@ -1,170 +1,234 @@
-function task1(){
-	$('p:has(b)').wrap('<div>');
-}
+   //task1
+	$('#block1').click(function(){
+			$(this).effect('blind', 500);
+			return false;
+		}
+	);
 
-function task2(){
-	$('p.www2').prepend('!').html('<h3>'+$('p.www2').html()+'</h3>').css('color', 'red');
-}
 
-function task3(){
-	$('p.www3').replaceWith(function() {
-		return '<div>' + $(this).html() + '</div>';
+//------------------------------------TASK2
+$(document).ready(function(){
+	$('#block2').click(function(){
+		$(this).effect('blind', {direction: 'horizontal'}, 500);
+		return false;
 	});
-}
+});
 
-function task4(){
-	$('#task4 :checkbox').prop('disabled', true);
-}
-
-function task5(){
-	$('#task5 :checkbox:not([disabled])').prop('checked', true);
-}
-
-function task6(){
-	$('#test6').prev().html('!').end().next().html('?');
-
-}
-
-function task7(){
-	var $elem = $('#test7');
-	var text = $elem.html();
-	$elem.prev().html(text).end().next().html(text);
-
-}
-
-function task8(){
-	var $elem = $('#test8');
-	var text = $elem.html();
-	$elem.prevUntil('p').last().prev().html(text);
-
-}
-
-
-
-function task9(){
-	$('#task9 li').addClass('.www').wrapInner('<i>').after('<li>привет</li>');
-}
-
-function task10(){
-	$('#task10 li:eq(3)').parent().prev().wrap('<div class="www10">');
-}
-
-function task11(){
-	$('p:not(.www11').each(function (index) {
-		$(this).append(index);
+//------------------------------------TASK3
+$(document).ready(function(){
+	$('#block3').click(function(){
+		$(this).effect('bounce', 500);
+		return false;
 	});
-}
+});
 
-function task12(){
-	$('p.www12').each(function() {
-		var $elem = $(this);
-		$elem.before($elem.clone().css('color', 'red')).css('color', 'green');
+//------------------------------------TASK4
+$(document).ready(function(){
+	$('#block4').click(function(){
+		$(this).effect('bounce', {direction: 'right'}, 500);
+		return false;
 	});
-	$('#task12').css('height','350px');
-}
+});
 
-function task13(){
-	$('h2 + p.www13').each(function() {
-		var $elem = $(this);
-		$elem.prev().before($elem);
+//------------------------------------TASK5
+$(document).ready(function(){
+	$('#block5').click(function(){
+		$(this).effect('clip', 500);
+		return false;
 	});
-}
+});
 
-function task14(){
-	$('p:empty').html(function() {
-		return $(this).prev().html();
+//------------------------------------TASK6
+$(document).ready(function(){
+	$('#block6').click(function(){
+		$(this).effect('clip', {direction: 'horizontal'}, 500);
+		return false;
 	});
-}
+});
 
-function task15(){
-	$('b').each(function() {
-		$(this).parent('.www15, p').css({color: 'red', fontSize: '30px'});
+//------------------------------------TASK7
+$(document).ready(function(){
+	$('#block7').click(function(){
+		$(this).effect('drop', {direction: 'left'}, 500);
+		return false;
 	});
-	$('#task15').css('height','420px');
-}
+});
 
-function task16(){
-	$('p:empty').each(function() {
-		$(this).html($(this).prevAll('h2').first().html());
+//------------------------------------TASK8
+$(document).ready(function(){
+	$('#block8').click(function(){
+		$(this).effect('drop', {direction: 'right'}, 500);
+		return false;
 	});
-	$('#task16').css('height','320px');
-}
+});
 
-function task17(){
-	$('input.www17').val(function (index, value) {
-		return value * value;
+//------------------------------------TASK9
+$(document).ready(function(){
+	$('#block9').click(function(){
+		$(this).effect('drop', {direction: 'down'}, 500);
+		return false;
 	});
-}
+});
 
-function task18(){
-	var $elem = $('#test18');
-	var textPrev = $elem.prev().html();
-	var textNext = $elem.next().html();
-	$elem.prepend(textPrev+' ');
-	$elem.append(' '+textNext);
-}
-
-function task19(){
-	var $id = $('#test19');
-	var $next = $id.nextAll().eq(1);
-	var $prev = $id.prevAll().eq(1);
-	var nextText = $next.html();
-	var prevText = $prev.html();
-	$next.html(prevText);
-	$prev.html(nextText);
-}
-
-function task20(){
-	$('div.www20').children(':not(h2)').css('color', 'red');
-}
-
-function task21(){
-	$('p').css('color', 'red').filter('.www21').html('!');
-}
-
-function task22(){
-	$('p.www22').css('color', 'red').first().html('!').end().last().html('?');
-}
-
-function task23(){
-	$('p.www23').append(function (index, text) {
-		return text;
-	})
-}
-
-function task24(){
-	$('p.www24').append(function (index) {
-		return index;
+//------------------------------------TASK10
+$(document).ready(function(){
+	$('#block10').click(function(){
+		$(this).effect('drop', {direction: 'up'}, 500);
+		return false;
 	});
-}
+});
 
-function task25(){
-	$('p.www25').append(function (index, text) {
-		return $(this).html(index * Number(text));
+//------------------------------------TASK11
+$(document).ready(function(){
+	$('#block11').click(function(){
+		$(this).effect('explode', 2000);
+		return false;
 	});
-}
+});
 
+//------------------------------------TASK12
+$(document).ready(function(){
+	$('#block12').click(function(){
+		$(this).effect('explode', {pieces: 14}, 5000);
+		return false;
+	});
+});
 
-	$('p.www26').on('click', function() {
-        	$(this).prev().remove().end().next().remove();
-    });
+//------------------------------------TASK13
+$(document).ready(function(){
+	$('#block13').click(function(){
+		$(this).effect('fold', 1000);
+		return false;
+	});
+});
 
+//------------------------------------TASK14
+$(document).ready(function(){
+	$('#block14').click(function(){
+		$(this).effect('fold', {size: '100px'}, 1000);
+		return false;
+	});
+});
 
-	$('p.www27').on('click', function() {
-        	$('p').prevUntil(':header').remove();
-    });
+//------------------------------------TASK15
+$(document).ready(function(){
+	$('#block15').click(function(){
+		$(this).effect('fold', {horizFirst: true, size: '30px'}, 2000);
+		return false;
+	});
+});
 
+//------------------------------------TASK16
+$(document).ready(function(){
+	$('#link16').mouseover(function(){
+		$('#block16').effect('highlight', {color: 'black'}, 500);
+		return false;
+	});
+});
 
-	$('p.www28').on('click', function() {
-        	$(this).nextAll('.test28').first().remove();
-    });
+//------------------------------------TASK17
+$(document).ready(function(){
+	$('#block17').click(function(){
+		$(this).effect('puff', {percent: 300}, 1000);
+		return false;
+	});
+});
 
+//------------------------------------TASK18
+$(document).ready(function(){
+	$('#block18').click(function(){
+		$(this).effect('pulsate', 100);
+		return false;
+	});
+});
 
-	$('p.www29').on('click', function() {
-        	$(this).nextAll().eq(4).remove();
-    });
+//------------------------------------TASK19
+$(document).ready(function(){
+	$('#block19').click(function(){
+		$(this).effect('shake', 200);
+		return false;
+	});
+});
 
+//------------------------------------TASK20
+$(document).ready(function(){
+	$('#block20').click(function(){
+		$(this).effect('shake', {direction: 'up', distance: 50, times: 6}, 200);
+		return false;
+	});
+});
 
-	$('p.www30').on('click', function() {
-        	$(this).nextAll().eq(4).not('h2').remove();
-    });
+//------------------------------------TASK21
+$(document).ready(function(){
+	$('#block21').click(function(){
+		$(this).effect('slide', {mode: 'hide'}, 1000);
+		return false;
+	});
+});
+
+//------------------------------------TASK22
+$(document).ready(function(){
+	$('#block22').click(function(){
+		$(this).effect('slide', {mode: 'hide', direction: 'right'}, 1000);
+		return false;
+	});
+});
+
+//------------------------------------TASK23
+$(document).ready(function(){
+	$('#block23').click(function(){
+		$(this).effect('slide', {mode: 'hide', direction: 'down'}, 1000);
+		return false;
+	});
+});
+
+//------------------------------------TASK24
+$(document).ready(function(){
+	$('#block24').click(function(){
+		$(this).effect('slide', {mode: 'hide', direction: 'up'}, 1000);
+		return false;
+	});
+});
+
+//------------------------------------TASK25
+$(document).ready(function(){
+	$('#block25').click(function(){
+		$(this).effect('transfer', {to: '#block25-1'}, 400);
+		return false;
+	});
+});
+
+//------------------------------------TASK26  Аккордеон
+$(document).ready(function(){
+	$('#accordion26').accordion();
+});
+
+//------------------------------------TASK27
+$(document).ready(function(){
+	$('#tabs27').tabs();
+});
+
+//------------------------------------TASK28
+$(document).ready(function(){
+	$('#tabs28').tabs({event: "mouseover"});  //срабатывает при наведении
+});
+
+//------------------------------------TASK29
+$(document).ready(function(){
+	$('#tabs29').tabs({collapsible: true});
+});
+
+//------------------------------------TASK30
+$(document).ready(function(){
+	$("#datepicker30").datepicker();
+});
+
+//------------------------------------TASK31
+$(document).ready(function(){
+	$("#datepicker31").datepicker().datepicker("option", "dateFormat", 'dd.mm.yy');
+});
+
+//------------------------------------TASK35
+$(document).ready(function(){
+	$("#dialog35").dialog();
+});

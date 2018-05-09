@@ -5,97 +5,66 @@ body{
 	margin:auto;
 	margin-top:10px;
 	width:600px;
-	height: 220px;
+	height: 280px;
 	border: 1px solid #000;
 }
-.task p{
-	position: relative;
-	left:15px;
-}
 
-h1{
-	display: inline-block;
-}
+
+
 h2{
 	display: inline-block;
+	margin-left: 10px;
 }
 h3{
-	display: inline-block;
-}
-h4{
-	display: inline-block;
-}
-
-#task1 div div p{
-	color:red;
-}
-
-#task2 p h3{
-	display: inline-block;
-}
-
-.www10{
-	color:red;
-}
-
-#task15{
-	height: 250px;
-}
-
-#task19{
-	height: 250px;
-}
-
-#task21{
-	height: 310px;
-}
-#task22{
-	height: 300px;
-}
-
-#task23{
-	height: 300px;
-}
-
-#task24{
-	height: 300px;
-}
-
-#task25{
-	height: 300px;
+	text-align: center;
 }
 
 
-#task27{
-	height: 300px;
+
+#block1,#block3,#block5,#block7,#block9,
+#block11,#block13,#block15,#block17,#block19,#block21,#block23{
+	background:#ff8000;
+	width:300px;
+	height: 220px;	
+	margin:30px auto;
+	cursor: pointer;
+}
+#block2,#block4,#block6,#block8,#block10,
+#block12,#block14,#block16,#block18,#block20,#block22,#block24{
+	background:#3fcaba;
+	width:300px;
+	height: 220px;	
+	margin:30px auto;
+	cursor: pointer;
+}
+#link16{
+	cursor: pointer;
 }
 
-#task28{
-	height: 300px;
+#block16{
+	position: relative;
+	top:-45px;
 }
 
-#task29{
-	height: 300px;
+#block25{
+	background:#ff8000;
+	width:300px;
+	height: 220px;	
+	margin:30px auto;
+	cursor: pointer;
+	float:left;
+	margin-left:70px;
+}
+#block25-1{
+	background:#ff8000;
+	width:100px;
+	height: 92px;	
+	margin:30px auto;
+	float:left;
+	position: relative;
+	right: -40px;
 }
 
-#task30{
-	height: 300px;
-}
-
-.www26{
-	cursor:pointer;
-}
-.www27{
-	cursor:pointer;
-}
-.www28{
-	cursor:pointer;
-}
-
-.www29{
-	cursor:pointer;
-}
-
-.www30{
-	cursor:pointer;
+#tabs28 a{
+	cursor: pointer;
 }
